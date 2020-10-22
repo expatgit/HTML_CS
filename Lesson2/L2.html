@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авторизация</title>
+</head>
+<body>
+<!--граница формы, открываем форму-->
+<form action="#" method="post"><!--"action - обработчик_на_сервере"-->
+    <!--method - метод передачи данных на сервер: post - в защищенном виде, get - в открытом виде, видно
+    в адресной строке-->
+
+    <div>
+        <label for="login">Логин:</label>   <!--label привязан к элементу с id="login"-->
+        <!--label используется только с формой, используется для input-->
+        <!--Однострочное текстовое поле-->
+        <!--placeholder - подсказка-->
+        <input id="login" type="text" placeholder="Введите логин" required maxlength="10" autofocus><!--автонаведение
+        на поле формы-->
+
+    </div>
+    <div>
+        <!--label привязан к элементу с id="pass"-->
+        <label for="pass">Пароль:</label>
+        <!--Однострочное текстовое поле, вводимые данные скрываются-->
+        <!--value не используется вместо placeholder как подсказку
+        обычно полльзовательский ввод /выбор, value используется в кнопках-->
+        <input id="pass" type="password" placeholder="Введите пароль" required minlength="6">
+    </div>
+    <div>
+        <!--поле, вложенное в label будет связано с ним, аналогично привязке по id/for-->
+        <label>
+            Запомнить меня
+            <input type="checkbox" checked> <!--checkbox по умолчанию стоит без галки. Чтобы постоянно
+            стояла галка - после атрибута checkbox ставим checked - галка стоит по умолчанию.
+            ДОСТУПЕН ТОЛЬКО для input type=checkbox и input type=radio  -->
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="Войти">
+        <!--type="submit" - отправка данныз на сервер-->
+        <!--type="button" - просто кнопка-->
+        <!--type="reset" - очистка полей формы-->
+
+    </div>
+</form>
+<!--атрибут required - поле, обязательное для заполнения-->
+<!--maxlength - для текстовых полей -->
+<!--minlength - для текстовых полей -->
+</body>
+</html>
