@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление товара</title>
+</head>
+<body>
+
+<!--категория-->
+<!--название-->
+<!--описание-->
+<!--дата изготовления-->
+<!--изображения-->
+<!--стоимость-->
+<form action="#" method="post>" enctype="multipart/form-data"><!--enctype - позволяет отправлять файлы на сервер-->
+    <!--Выпадающий список-->
+    <label for="category">Категория товара</label>
+    <select id="category">
+        <!--<select multiple size="3" --Выбор из набора значений, вне формы не используется-->-->
+        <!--multiple - выбор нескольких значений из списка-->
+        <!--size - кол-во отображаемых пунктов по дефолту -->
+        <optgroup label="Глина">
+            <option>Посуда</option>
+            <option>Скульптуры</option>
+        </optgroup>
+        <optgroup label="Кожа">
+            <option>Сумки</option>
+            <option>Обувь</option>
+        </optgroup>
+        <optgroup label="Кондитерка">
+            <option>Торты</option>
+            <option>Печенье</option>
+        </optgroup>
+        <!--<option value="1">Глина</option> &lt;!&ndash;option value="" - обязательный синтаксис&ndash;&gt;
+        <option value="2">Кожа</option>
+        <option value="3">Кондитерка</option>&lt;!&ndash;option value="2" selected - selected - выбор значения по дефолту&ndash;&gt;-->
+    </select>
+
+    <div>
+        <label for="title">Название товара</label>
+        <input id="title" type="text">
+    </div>
+
+    <div>
+
+        <label for="description">Описание товара:</label>
+        <!--Многострочный ввод текста-->
+        <textarea id="description" placeholder="Введите описание товара"></textarea>
+
+    </div>
+    <div>
+        <label for="date">Дата изготоволения:</label>
+        <input type="date" id="date">
+        <!--datetime-local-->
+        <!--time    -->
+        <!--week-->
+        <!--month-->
+    </div>
+
+    <div>
+        <label for="images">Фото товара</label>
+        <!--input type="file" multiple -> name="images[]"--><!--при аттаче нескольких файлов тоже надо
+        ставить квадратные скобки-->
+        <input type="file" id="images" multiple accept="image/*"><!--multiple - загрузка нескольких картинок, accept -
+        фильтр по типу загружаемых файлов(ограничение)-->
+    </div>
+
+    <div>
+        <label for="price">Цена товара:</label>
+        <input type="number" id="price" min="0">
+
+    </div>
+
+    <fieldset> <!--disabled-->><!--группировка элементов внутри формы-->
+        <!--заголовок fieldset-->
+        <legend>Дополнительная информация</legend> <!--непосредственно заголовок-->
+        <!--Объединяем несколько checkbox в группу-->
+        <div>
+        <p>Доступные варианты оплаты</p>
+        <label>перевод на счет
+            <input type="checkbox" value="безнал" name="pay[]">
+        </label>
+        <label>оплата наличными
+            <input type="checkbox" value="нал" name="pay[]"><!--имя (pay)для всех одинаковое, чтобы на сервер инфа
+            пришла в виде массива, value задавать сразу - либо текстом, либо цифровым обозначением. После name -
+            ставим квадратные скобки - создание массива-->
+        </label>
+        </div>
+       <!--можно выбрать несколько вариантов checkbox-->
+        <div>
+            <p>Возможен ли возврат товара</p>
+            <!--группа радиокнопок(доступен один из нескольких вариантов)-->
+            <label>Да
+                <input type="radio" value="yes" name="back">
+            </label>
+            <label>Нет
+                <input type="radio" value="no" name="back">
+            </label><!--name должен быть одинаковым, квадратные скобки не нужны-->
+        </div>
+    </fieldset>
+
+    <div>
+        <button type="submit" value="123">Добавить</button>
+        <!--при создании кнопки через button - value всегда свободен-->
+        <button type="reset">Очистить</button>
+        <!--type="submit" - отправка данныз на сервер-->
+        <!--type="button" - просто кнопка-->
+        <!--type="reset" - очистка полей формы-->
+    </div>
+</form>
+</body>
+</html>

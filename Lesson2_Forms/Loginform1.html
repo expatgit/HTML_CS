@@ -9,16 +9,18 @@
 </head>
 <body>
 <!--граница формы, открываем форму-->
-<form action="#" method="post"><!--"action - обработчик_на_сервере"-->
+<form autocomplete="on" action="#" method="post"><!--"action - обработчик_на_сервере"--><!--autocomplete -
+заполеннеие формы-->
     <!--method - метод передачи данных на сервер: post - в защищенном виде, get - в открытом виде, видно
     в адресной строке-->
 
     <div>
-        <label for="login">Логин:</label>   <!--label привязан к элементу с id="login"-->
+        <label for="email">Логин:</label>   <!--label привязан к элементу с id="login"-->
         <!--label используется только с формой, используется для input-->
         <!--Однострочное текстовое поле-->
         <!--placeholder - подсказка-->
-        <input id="login" type="text" placeholder="Введите логин" required maxlength="10" autofocus><!--автонаведение
+        <!--<input id="login" type="text" placeholder="Введите логин" required maxlength="10" autofocus>-->
+        <input name="email" id="email" type="email" placeholder="Введите емейл" required autofocus><!--автонаведение
         на поле формы-->
 
     </div>
