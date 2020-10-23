@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма онлайн-заказа</title>
+    <link rel="shortcut icon" href="tomat.png" type="image/png">
+    <style type="text/css">
+        .autorize {
+            width: 20px;
+            background: #f0f8ff;
+            padding: 5px;
+            padding-right: 10px;
+            border: #f0f8ff;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<header>
+
+    <nav id="main_menu">
+
+
+        <button type="button" name="index" id="index" value="index"><a href="index.html"><b>Главная</b></a>&nbsp</button>
+        <button><a href="about.html">О компании</a>&nbsp;&nbsp;</button>
+        <button><a href="login.html"><b>Заказ пиццы</b></a></button>&nbsp;&nbsp;
+        <button><a href="recepy.html"><b>Рецепты</b></a></button>&nbsp;&nbsp;
+        <button><a href="busket.html">Корзина</a></button>&nbsp;&nbsp;
+        <button><a href="promotions.html"><b>Акции</b></a></button>&nbsp;&nbsp;
+        <button><a href="contact.html"><b>Контакты</b></a></button>&nbsp;&nbsp;
+        <div class="autorize">
+            <button type="button" value="autorize" name="autorize" id="autorize"><a name="authorize" href="login.html">Войти
+            </a></button>
+        </div>
+
+    </nav>
+    <hr/>
+    <main>
+        <h1>Делаем заказ тут:</h1>
+
+        <form name="online_order" action="#" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="dept">Выберите магазин:</label>
+                <input list="dept" required>
+                <datalist name="dept" id="dept">
+                    <option>Магазин 1</option>
+                    <option>Магазин 2</option>
+                    <option>Магазин 3</option>
+                    <option>Магазин 4</option>
+                    <option>Магазин 5</option>
+                </datalist>
+                <!--<select name="dept" id="dept">
+                    <option>Магазин 1</option>
+                    <option>Магазин 2</option>
+                    <option>Магазин 3</option>
+                    <option>Магазин 4</option>
+                    <option>Магазин 5</option>
+                </select>-->
+            </div>
+            <div>
+                <label for="customer">Имя заказчика:</label>
+                <input type="text" name="customer" id="customer" placeholder="Введите имя заказчика" required>
+            </div>
+            <div>
+                <label for="address">Адрес доставки:</label>
+                <input type="text" size="30" name="address" id="address" placeholder="Введите адрес для доставки" required>
+            </div>
+            <div>
+                <label for="phone">Контактный телефон:</label>
+                <input type="tel" size="30" name="phone" id="phone" placeholder="Введите контактный телефон" required>
+            </div>
+            <div>
+                <label for="bill">Нужен чек?</label>
+                <input type="checkbox" name="bill " id="bill">
+                <label for="mail">Введите e-mail, на который будет отправлен чек:</label>
+                <input type="email" name="mail" id="mail" placeholder="введите e-mail">
+            </div><br><br><br><br><br>
+
+            <table border="1"><!--как кошмарно смотрится шрифт в целом...-->
+                <tr>
+                    <th><img src="img\4ch.jpg" width="100" height="100" alt="4 сыра"><br>Четыре сыра<br><i>сливочный
+                        соус, моцарелла, пармезан, горгонзола, эмменталь</i><br>
+                        <label for="4cheese">Сколько заказываем?</label>
+                        <input type="number" id="4cheese" name="4cheese" min="0">
+                    </th>&nbsp;
+                    <th><img src="img\caesar.jpg" width="100" height="100" alt="Цезарь"><br>Цезарь<br><i>курица,
+                        соус песто, сливочный соус, каперсы, лук красный</i><br>
+                        <label for="caesar">Сколько заказываем?</label>
+                        <input type="number" id="caesar" name="4cheese" min="0">
+                    </th>&nbsp;
+                    <th><img src="img\biancasalm.jpg" width="100" height="100" alt="Лось-лосось"><br>Бьянка с лососем<br><i>
+                        Бьянка с лососем, сыром маскарпоне и шпинатом</i><br>
+                        <label for="biancasalm">Сколько заказываем?</label>
+                        <input type="number" id="biancasalm" name="4cheese" min="0">
+                    </th>
+                </tr>
+            </table><br><br><br>
+            <div>
+                <label for="comment">Комментарии к заказу</label>
+                <textarea id="comment" rows="10" cols="100"></textarea>
+            </div><br><br><br>
+
+            <fieldset>
+                <legend>Способ оплаты</legend>
+                <div>
+                    <label for="beznal">Безналичный рассчет</label>
+                    <input type="radio" id="beznal">
+                    <label for="cash">Наличными</label>
+                    <input type="radio" id="cash">
+                </div>
+            </fieldset><br><br><br>
+
+            <div>
+                <button type="submit" value="Сделать заказ">Сделать заказ</button>
+            </div>
+
+            <div>
+                <button type="reset" value="Очистить">Очистить</button>
+            </div>
+        </form>
+
+
+    </main>
+
+    <hr/>
+    <footer>
+
+        <span style="color: #7fffd4; ">○ Защита прав? В другой раз, мы пока учимся.</span>
+
+    </footer>
+</body>
+</html>

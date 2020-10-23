@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <link rel="shortcut icon" href="tomat.png" type="image/png">
+</head>
+<body>
+<div>
+    Комментарий про PHP
+</div>
+<br><br>
+
+<form action="#" name="main_login" enctype="multipart/form-data" method="post">
+    <div>
+        <label for="login" id="login">Логин:&nbsp; </label>
+        <input name="login" type="text" id="login" placeholder="Введите логин" required autofocus maxlength="16">
+    </div>
+    <br>
+    <div>
+        <label for="pass" id="pass">Пароль:</label>
+        <input name="pass" type="password" id="pass" placeholder="Введите пароль" required minlength="6">
+    </div>
+    <br>
+    <div>
+        <label for="check" id="check">Запомнить меня</label>
+        <input type="checkbox" name="check" id="pass">
+    </div>
+    <br>
+    <div>
+        <input name="submit" id="submit" type="submit" value="Войти">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        <input name="reset" id="reset" type="reset" value="Сброс">
+    </div>
+</form>
+<hr/><br><br>
+
+<button type="button" value="enter" name="enter" id="enter"><a href="shop.html"><img src="tomat.png">Вход без
+    регистрации</a>
+</button>
+
+</body>
+</html>
