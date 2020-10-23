@@ -38,7 +38,7 @@
     <main>
         <h1>Делаем заказ тут:</h1>
 
-        <form name="online_order" action="#" method="post" enctype="multipart/form-data">
+        <form name="online_order" id="online_order" action="#" method="post" enctype="multipart/form-data">
             <div>
                 <label for="dept">Выберите магазин:</label>
                 <input list="dept" required>
@@ -110,16 +110,17 @@
                 </div>
             </fieldset><br><br><br>
 
-            <div>
-                <button type="submit" value="Сделать заказ">Сделать заказ</button>
-            </div>
 
-            <div>
-                <button type="reset" value="Очистить">Очистить</button>
-            </div>
         </form>
-
-
+        <div>
+            Кнопки вне формы, но привязаны к форме, надо полагать...
+        </div>
+        <div>
+            <button type="submit" form="online_order" value="Сделать заказ">Сделать заказ</button>
+        </div>
+        <div>
+            <button type="reset" form="online_order" value="Очистить">Очистить</button>
+        </div>
     </main>
 
     <hr/>
