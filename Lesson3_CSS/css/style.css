@@ -1,0 +1,101 @@
+
+body {
+    font-size: 18px;
+    background: deepskyblue;
+    /*margin: 0*/;
+}
+
+header, footer {
+    height: 100px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*адаптивная отрисовка изображений*/
+img {
+    width: 100%; /*ширина всех изображений - 100% от ширины родительского элемента*/
+    height: auto; /*высота подстраивается под ширину, картинка не искажается, пропорции не меняются*/
+}
+
+/*для отрисовки отдельных изображений можно создать отдельный класс*/
+
+table, th, td, tr {
+    /*рамка: ширина - 1пикс, тип - solid-сплошная, цвет - черный*/
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px; /*отступ от рамок - по 15пикс с каждой стороны*/
+    text-align: center; /*выравнивание содержимого по центру*/
+}/*вместо задания высоты, лучше пользоваться padding*/
+
+table {/*схлопывание - collapse, объединение линий*/
+    border-collapse: collapse;
+    /*не делать фиксированные размеры ширины. Высота ок, ширина - нет. Надо задавать % и тд */
+    width: 100%; /*ширина задается от ширины родителя*/
+}
+.container {
+    max-width: 500px; /*максимальная ширина в пикселях (есть просто ширина - width. max-width -
+     может быть меньше, но не растянется. max-width от 960 до 1200*/
+    /*min-width: ;*/
+    /*width: 1000px;*/
+    /*height: ;*/
+
+
+    /*отступа от краев экрана*/
+    /*margin - внешний отступ, снаружи элементов*/
+    /*margin-top + margin-bottom - 0, свободное пространство слева и справа от элемента будет
+     распределено равным образом с помощью значения auto*/
+    margin: 50px auto; /**/
+
+    padding: 100px;
+
+    /*padding - отступ внутри элемента, текст или объект углубляется в элемент*/
+
+    /*у элемента может быть рамка (border). Рамка стоит между margin и padding*/
+}
+
+/*создаем правила (классы) для цветов фона, шрифта и прочих элементов*
+/*color - цвет текста*/
+/*bg - цвет фона*/
+.text-brown1 {
+    color: crimson;
+    /*color - сам по себе цвет текста, задается либо #ffffff, либо RGB*/
+    /*color: #ffffff;
+    color: rgb(100, 100, 100);
+    colot: rgba с прозрачностью (100, 100, 100, 0.4);
+    color: black*/
+}
+.bg-brown1 {
+    background: darkseagreen;
+}
+.bg-brown2 {
+    background: aliceblue;
+}
+
+.bg-brown3 {
+    background: aliceblue;
+}
+
+.more-bth {
+    /*display определяет поведение элемента на странице
+    display: block; - элемент становится блочным
+    display: inline; - элемент строчный, не важно какой он изначально
+    display: none - элемент исчезнет*/
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+/*    text-align: center;*/
+}
+
+.text-center {
+    text-align: center;
+}
