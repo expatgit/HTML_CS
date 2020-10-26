@@ -7,9 +7,9 @@
 </head>
 <body>
 
-<header class="bg-brown1" >
+<header class="bg-blue1 text-center" id="main_menu">
 
-    <nav class="container">
+    <nav>
         <a class="text-brown1" href="index.html">Главная</a><!--вставляем ссылку-->
         <a class="text-brown1" href="articles.html">Статьи</a>
         <a class="text-brown1" href="#">Магазин</a>
@@ -20,9 +20,30 @@
 
 </header>
 
+<div class="b-sidebar-menu_origin" id="side_menu">
+    <ul type="square"><!--<ul>(маркированный список) или <ol>(нумерованный список) список, границы списка--><!--НИКАКИХ ДРУГИХ ТЕГОВ В СПИСОК НЕ ДОБАВЛЯЮТСЯ, ТОЛЬКО <LI>-->
+        <li><!--в <li> можно добавлять другие теги-->
+            <a href="#">Глина</a>
+        </li><!--Элемент списка-->
+        <li>
+            <a href="#">Кондитерские изделия</a>
+        </li><!--Элемент списка-->
+
+        <ul type="disk">
+
+            <li>1234567789</li>
+        </ul>
+
+        <li><a href="index.html"> На главную</a></li>
+
+    </ul>
+
+</div>
+
 <main class="container">
 
        <article>
+           <div>
 
            <h1>Про изготовление печенья</h1>
            <a href="#ingredients"> Перейти к ингредиентам</a>
@@ -77,11 +98,14 @@
            </p>
            <!--<img src="../Lesson1/img/legal.png" alt="текст в картинке" height="100" width="100">&lt;!&ndash;для выхода на уровень выше надо поставить ..! Для выхода на два уровня выше
     ../..!&ndash;&gt;-->
+           </div>
        </article>
 
     <!--атрибут id есть у всех тегов обозначает уникальный id элемента. в рамках одной страницы они не должны повторяться,
     id уникален-->
-    <table id="ingredients"><!--границы таблиы - border="1" - задает рамку, вместо этого использовать css-->
+    <details  id="ingredients">
+        <summary class="text-brown1">Ингредиенты, подробнее</summary>
+    <table><!--границы таблиы - border="1" - задает рамку, вместо этого использовать css-->
 
         <caption>
             Ингредиенты
@@ -114,12 +138,14 @@
 
 
     </table>
+    <a href="#main_menu">Наверх</a>
+    </details>
 
 
 
 </main>
 
-<footer class="bg-brown1">подвал сайта</footer><!--подвал сайта-->
+<footer class="bg-blue1">подвал сайта</footer><!--подвал сайта-->
 
 
 </body>
