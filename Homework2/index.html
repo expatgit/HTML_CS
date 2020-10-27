@@ -4,51 +4,43 @@
     <meta charset="UTF-8">
     <title>HTML Test Сеньор Помидор</title>
     <link rel="shortcut icon" href="tomat.png" type="image/png">
-    <style type="text/css">
-        .autorize {
-            width: 30px;
-            background: #f0f8ff;
-            padding: 5px;
-            padding-right: 10px;
-            border: #f0f8ff;
-            float: right;
-        }
-    </style>
+    <link rel="stylesheet" href="сss/style.css">
+
 </head>
-<body>
+<body class="bg-green1">
 
 <header>
 
     <nav id="main_menu">
 
 
-            <button type="button" name="index" id="index" value="index"><a href="index.html"><b>Главная</b></a>&nbsp</button>
-            <button><a href="about.html">О компании</a>&nbsp;&nbsp;</button>
-            <button><a href="login.html"><b>Заказ пиццы</b></a></button>&nbsp;&nbsp;
-            <button><a href="recepy.html"><b>Рецепты</b></a></button>&nbsp;&nbsp;
-            <button><a href="busket.html">Корзина</a></button>&nbsp;&nbsp;
-            <button><a href="promotions.html"><b>Акции</b></a></button>&nbsp;&nbsp;
-            <button><a href="contact.html"><b>Контакты</b></a></button>&nbsp;&nbsp;
-            <div class="autorize">
-                <button type="button" value="autorize" name="autorize" id="autorize"><a name="authorize" href="login.html">Войти
+            <button type="button" class="button_bg1" title="Главная" name="index" id="index" value="index"><a href="index.html"><b>Главная</b></a>&nbsp</button>
+            <button type="button" class="button_bg1" title="Кратко о компании" name="about" id="about" value="about"><a href="about.html">О компании</a>&nbsp;&nbsp;</button>
+            <button type="button" class="button_bg1" title="Сделать онлайн-заказ" name="order" value="order" id="order"><a href="login.html"><b>Заказ пиццы</b></a></button>&nbsp;&nbsp;
+            <button type="button" class="button_bg1" title="Очумелые ручки" name="recepy" id="recepy" value="recepy"><a href="recepy.html"><b>Рецепты</b></a></button>&nbsp;&nbsp;
+            <button type="button" class="button_bg1" title="Корзина" name="busket" id="busket" value="busket"><a href="busket.html">Корзина</a></button>&nbsp;&nbsp;
+            <button type="button" class="button_bg1" title="Акции" name="promo" id="promo" value="promo"><a href="promotions.html"><b>Акции</b></a></button>&nbsp;&nbsp;
+            <button type="button" class="button_bg1" title="Связаться с нами" name="contact" id="contact" value="contact"><a href="contact.html"><b>Контакты</b></a></button>&nbsp;&nbsp;
+
+                <button class="button_bg2 autorize" title="Личный кабинет" type="button" value="autorize" name="autorize" id="autorize"><a href="login.html">Войти
                 </a></button>
-            </div>
+
 
     </nav>
     <br>
-    <small>Телефон: 223-33-22-223-322</small>
+    <small class="text-right">Телефон: 223-33-22-223-322</small>
 </header>
 <hr/>
 <br>
 
-<main>
+<main class="text-main-pos main_container">
     <aside>
-        <img vspace="10" hspace="10" align="left" src="img\pom.jpg" width="200" height="200" alt="помидор">
+        <img vspace="10" hspace="10" align="left" src="img/tomat_opacity.png" width="200" height="200" alt="помидор">
     </aside>
     <article>
 
         <h1>
-            <u>Добро пожаловать на сайт онлайн-заказа и доставки пиццы</u>
+            Добро пожаловать на сайт онлайн-заказа и доставки пиццы
         </h1>
 
         <hr/>
@@ -66,7 +58,7 @@
             <h2>Родина пиццы</h2>
         </section>
         <section>
-            <img vspace="10" hspace="10" align="right" src="img\p1.jpg" width="300" height="200" alt="рис1">
+            <img title="Пицца 1" class="pic_align_right" src="img/p1.jpg" width="300" height="200" alt="рис1">
             Знатоки кулинарии часто спорят о том, какую страну можно считать родиной любимого всеми блюда. Дело в том,
             что похожее
             угощение готовили еще в Древней Греции. Прототип современной пиццы представлял собой круглый хлеб, щедро
@@ -91,9 +83,9 @@
             состоящей из сыра и мясных продуктов.
         </section>
         <section>
-            <h2> Секрет приготовления пиццы</h2>
-            <p>
-                <img vspace="10" hspace="10" align="right" src="img\p2.jpg" height="200" width="300" alt="рис2">
+            <h2> Секрет приготовления пиццы</h2></section>
+            <section>
+                <img title="Пицца 2" class="pic_align_right" src="img/p2.jpg" height="200" width="300" alt="рис2">
                 Рассказывая о настоящем итальянском блюде, нельзя не упомянуть о правильном способе подбора продуктов.
                 Очень важен процесс приготовления
                 теста и соуса, а также правильная последовательность их «сборки». Итальянская пицца – это тонкая
@@ -117,8 +109,8 @@
                 в последнюю очередь. Далее
                 мы вам предложим несколько несложных рецептов вкусной пиццы, которые вы без труда воплотите в домашних
                 условиях.
-            </p>
-        </section>
+            </section>
+
         <section>
             <h2>Заключение</h2>
             Пицца – это очень демократичное блюдо, которое будет уместно практически в любой ситуации. Ее готовят на
