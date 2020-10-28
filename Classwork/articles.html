@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Статьи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-orange-1 text-brown-9">
+
+<!--ctrl + alt  + L-->
+<!--articles.html-->
+<header class="bg-brown-7">
+    <nav class="container"> <!-- навигация (меню сайта)-->
+        <a class="text-brown-1" href="index.html">Главная</a> <!-- ссылка -->
+        <a class="text-brown-1" href="articles.html">Статьи</a> <!-- ссылка -->
+        <a class="text-brown-1" href="#">Магазин</a> <!-- ссылка -->
+        <a class="text-brown-1" href="#">Контакты</a> <!-- ссылка -->
+    </nav>
+</header>
+
+<!--дополнительное содержимое страницы:
+навигация, новости, акции и пр, без данного содержимого страница
+не потеряет основной смысл-->
+<aside>
+    <nav>
+        <ul> <!-- ul (маркированный) или ol (нумерованный) границы списка;
+        ul или ol должны содержать только теги li - элемента списка-->
+            <li> <!-- элемент списка -->
+                <a href="#">Глина</a>
+            </li>
+            <li> <!-- элемент списка -->
+                <a href="#">Кондитерские изделия</a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+
+<main class="container main-margin">
+    <article class="shadow-block"> <!-- для компановки элементов можно использовать тег div -->
+        <h3>Работа с глиной</h3>
+        <p> <!--текстовый абзац-->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Amet asperiores atque autem dolorem dolores eos facilis
+            fugiat impedit inventore magni molestiae nobis quae quia
+            quisquam sint sit tempore, tenetur veniam.
+        </p>
+        <a class="shadow-btn more-btn bg-brown-9 text-brown-1 text-center" href="article.html">Подробнее</a>
+    </article>
+    <article class="shadow-block">
+        <h3>Про изготовление печенья</h3>
+        <p> <!--текстовый абзац-->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Amet asperiores atque autem dolorem dolores eos facilis
+            fugiat impedit inventore magni molestiae nobis quae quia
+            quisquam sint sit tempore, tenetur veniam.
+        </p>
+        <a class="shadow-btn more-btn bg-brown-9 text-brown-1 text-center" href="article.html">Подробнее</a>
+    </article>
+</main>
+
+<footer class="bg-brown-7">
+    Подвал сайта
+</footer>
+</body>
+</html>

@@ -7,20 +7,51 @@
     <link rel="stylesheet" href="сss/login.css">
 </head>
 <body class="bg-green1">
+
+<header>
+
+    <nav id="main_menu">
+
+
+        <button type="button" class="button_bg1" title="Главная" name="index" id="index" value="index"><a
+                href="index.html"><b>Главная</b></a>&nbsp
+        </button>
+        <button type="button" class="button_bg1" title="Кратко о компании" name="about" id="about" value="about"><a
+                href="about.html">О компании</a>&nbsp;&nbsp;
+        </button>
+        <button type="button" class="button_bg1" title="Сделать онлайн-заказ" name="order" value="order" id="order"><a
+                href="login.html"><b>Заказ пиццы</b></a></button>&nbsp;&nbsp;
+        <button type="button" class="button_bg1" title="Очумелые ручки" name="recepy" id="recepy" value="recepy"><a
+                href="recepy.html"><b>Рецепты</b></a></button>&nbsp;&nbsp;
+        <button type="button" class="button_bg1" title="Корзина" name="busket" id="busket" value="busket"><a
+                href="busket.html">Корзина</a></button>&nbsp;&nbsp;
+        <button type="button" class="button_bg1" title="Акции" name="promo" id="promo" value="promo"><a
+                href="promotions.html"><b>Акции</b></a></button>&nbsp;&nbsp;
+        <button type="button" class="button_bg1" title="Связаться с нами" name="contact" id="contact" value="contact"><a
+                href="contact.html"><b>Контакты</b></a></button>&nbsp;&nbsp;
+
+        <button class="button_bg2 autorize" title="Личный кабинет" type="button" value="autorize" name="autorize"
+                id="autorize"><a href="login.html">Войти
+        </a></button>
+
+
+    </nav>
+    <br>
+    <small class="text-right">Телефон: 223-33-22-223-322</small>
+</header>
+<hr/>
+
 <main>
-    <div>
-    <pre>Комментарий про PHP
-
-
-    </pre>
+    <div> <!--Верхняя надпись-->
+        <pre>Комментарий про PHP</pre>
         По идее при заходе на главную страницу сервер должен нас опознать по полученным кукисам.
         Если он узнает пользователя, то эту страницу пропускаем.
 
-    </div>
+    </div><!--Конец верхней надписи-->
     <br><br>
 
-    <div>
-        <form class="login_form" action="#" name="main_login" enctype="multipart/form-data" method="post">
+    <div> <!--Форма регистрации в центре страницы-->
+        <form class="login_form shadow-block1" action="#" name="main_login" enctype="multipart/form-data" method="post">
             <div>
                 <label for="login">Логин:&nbsp; </label>
                 <input name="login" type="text" id="login" placeholder="Введите логин" required autofocus
@@ -33,15 +64,16 @@
             </div>
             <br>
             <div>
-                <label for="check" id="check">Запомнить меня</label>
-                <input type="checkbox" name="check">
+                <label for="check" id="check" class="text-shadow1">Вы хотите, чтобы Вас помнили?</label>
+                <input type="checkbox" name="check" id="checkbox">
             </div>
             <br>
             <div>
-                <input name="submit" id="submit" type="submit" value="Войти">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-                <input name="reset" id="reset" type="reset" value="Сброс">
+                <input name="submit" id="submit" type="submit" value="Войти" class="shadow-btn1">&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;
+                <input name="reset" id="reset" type="reset" value="Сброс" class="shadow-btn1">
             </div>
-        </form>
+        </form><!--Конец формы регистрации-->
     </div>
     <hr/>
     <br><br>
@@ -59,55 +91,130 @@
     </button>
 
 
-<div class="comment"><h3 align="center">Комментарий относительно transform и position</h3>
-    <!--<div class="comment1">-->
+    <div class="comment"><h3 align="center">Комментарий относительно transform и position</h3>
+        <!--<div class="comment1">-->
 
-    При использовании стилей/классов, в которых есть transform и position, браузер отдает приоритет объектам с
-    данными стилями/классами. Рассматриваемый объект, если он стоит в начале кода страницы, выносится туда, куда задано
-    стилем/классом. А объект, который расположен после перемещаемого объекта, перемещается в начало страницы или после
-    предыдущего блока, который не имеет указаний к перемещению и т.д. Кроме того, объекты, размещенные стилем/классом,
-    не имеют жесткой привязки и при изменении размеров окна сваливаются в куче и перекрывают друг друга.
+        При использовании стилей/классов, в которых есть transform и position, браузер отдает приоритет объектам с
+        данными стилями/классами. Рассматриваемый объект, если он стоит в начале кода страницы, выносится туда, куда
+        задано
+        стилем/классом. А объект, который расположен после перемещаемого объекта, перемещается в начало страницы или
+        после
+        предыдущего блока, который не имеет указаний к перемещению и т.д. Кроме того, объекты, размещенные
+        стилем/классом,
+        не имеют жесткой привязки и при изменении размеров окна сваливаются в куче и перекрывают друг друга.
 
-    <details>
-        <summary>
-            Про оформление текста, конфликт стилей
-        </summary>
-        <pre>
+        <details>
+            <summary>
+                Про оформление текста, конфликт стилей
+            </summary>
+            <pre>
         text-decoration: red;
         font-weight: bold;
         </pre>
-        При размещении двух и более дочерних элементов внутри родительского
-        Как быть, если надо и жирный, и красный одновременно?
-        Более поздний стиль перезаписывает более ранний.<br>
-        Пример: Надпись возле красной стрелки
-    </details>
-
-    <details>
-    <summary>
-        Про конфликт стилей-2
-    </summary>
-
-    При размещении двух и более дочерних элементов внутри родительского одно свойство брокирует другое.<br>
-        <a href="about.html">Пример =〉</a><br>Сравнить внешний вид кнопок главного меню в хедере на главной странице и на
-        странице о компании
-
-    </details>
-    <details>
-        <summary class="text-red1">
-            Как добавить скроллинг встраиваемый объект, ограниченный по ширине и высоте? Раскрыть детали абзаца
-        </summary>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis consequatur cum debitis, deleniti dolor dolorem enim eos magni placeat praesentium quas quasi quo ullam unde veniam voluptatem. Aliquid, animi beatae blanditiis culpa distinctio ducimus earum enim est, eum facere ipsa magnam magni nemo, neque officiis porro quasi quod reiciendis reprehenderit sapiente tempora tenetur veritatis voluptates. Aperiam, autem culpa dolores eius eos excepturi fuga id ipsa iure perferendis, praesentium, provident quasi quisquam quod vel. Accusantium amet asperiores aspernatur corporis delectus distinctio dolor eius eligendi est eveniet fuga fugiat harum hic impedit in inventore magnam magni molestiae molestias mollitia non officia omnis perspiciatis provident quaerat quam quas quia rem repellat repellendus reprehenderit rerum sunt suscipit tempora tenetur, veniam vero? Ab aperiam earum eligendi facere odio recusandae reprehenderit sit ut. Amet asperiores consectetur, culpa dolore doloremque est harum hic, maxime neque nostrum nulla suscipit, veniam? Alias, aliquam aliquid asperiores consequatur culpa dolore doloremque eius eligendi ex, facilis illum inventore labore laudantium magni maiores molestias mollitia neque nesciunt numquam optio perferendis quaerat quo reiciendis sed sint vel velit vitae! A accusamus, consequatur eos ex explicabo laboriosam, nam nihil nostrum perspiciatis possimus quos soluta tenetur. Accusamus alias aliquam aspernatur dicta dignissimos enim excepturi facilis fuga in laudantium modi, nobis odit officia optio, perferendis quam, quas quo quod repellat sit tenetur ut voluptas voluptate voluptatem voluptatibus! At beatae harum hic ipsa ipsam laudantium nihil obcaecati placeat praesentium, quasi. Accusamus alias aspernatur atque autem blanditiis deserunt dignissimos dolorem dolores eius eum eveniet ipsam iste labore laborum molestiae molestias mollitia natus necessitatibus odit officia possimus provident qui quibusdam quos saepe, similique tenetur totam ut veritatis voluptas. Aperiam autem blanditiis consequuntur corporis culpa deserunt dignissimos distinctio dolores dolorum, ea earum, error expedita id incidunt ipsum laborum nobis nostrum obcaecati perspiciatis praesentium quaerat quisquam quos reprehenderit saepe sed sequi sint sunt suscipit temporibus totam velit voluptate voluptatem voluptatum. Adipisci autem excepturi exercitationem minus neque omnis ullam. Ab amet commodi, delectus deserunt dicta dolore ducimus earum eos ex excepturi exercitationem hic illo ipsam ipsum iure iusto, labore maiores mollitia nam neque non numquam obcaecati officia optio perspiciatis reiciendis, rem sequi sit soluta suscipit temporibus totam ullam vero! Ab autem beatae consequatur, eum eveniet illum ipsam, libero minus nemo non, odio odit quia tempore totam velit! Ad cum eos, exercitationem illo optio quidem repellat tempora ullam? Atque autem beatae consectetur distinctio dolor, doloremque enim error exercitationem incidunt minima nihil obcaecati perferendis quae quaerat quasi sint, vel. Asperiores at autem, beatae delectus dignissimos error eum, facere illum inventore laudantium maiores nostrum qui quod rem repellat tenetur voluptates. Ab adipisci aliquid aperiam, culpa cum dicta doloremque eius ex facere inventore iusto labore maiores nostrum perferendis quae quas quia reprehenderit repudiandae tempore tenetur totam vel veritatis voluptas voluptatibus voluptatum? Accusamus animi, cumque dolor, eaque eligendi excepturi illo quaerat quia reprehenderit sed tempore, vel. Accusamus dignissimos dolorem eaque eligendi esse eveniet inventore ipsam labore mollitia, necessitatibus neque nesciunt, non possimus sunt tempora ullam vitae voluptas voluptatem. Architecto esse natus, non nostrum ratione reprehenderit similique vero voluptas! Corporis dicta dolore ea iste iure obcaecati recusandae suscipit. Ab aliquid deleniti dolorem dolorum, eligendi eveniet illum ipsam labore libero, magni molestiae nemo nisi optio perspiciatis quis sit temporibus ullam ut, velit vitae voluptate voluptatem voluptatibus! Alias amet aperiam aspernatur atque beatae, culpa cum distinctio dolorum eaque et eveniet exercitationem facere fugit ipsa ipsam labore laboriosam minima nihil omnis, optio perferendis quam repudiandae saepe similique sit ullam voluptas voluptate! Accusantium animi architecto asperiores assumenda, autem corporis culpa cumque delectus deserunt dicta eveniet facere facilis fugiat inventore itaque laudantium maiores modi nihil quia quo ratione repellendus reprehenderit sequi similique sint tempore ullam veritatis vitae voluptas voluptatum! Ad ea est eveniet ex expedita ipsam laboriosam nesciunt recusandae. Aut beatae consequuntur doloribus eius enim esse est harum, nemo nihil odit quaerat quas, ratione repellendus sunt suscipit tempora totam ullam! At, atque culpa debitis dolor ducimus ea earum enim error est facere hic ipsam maiores minus modi mollitia neque nihil nobis nostrum perspiciatis possimus qui quibusdam, recusandae repellendus, repudiandae rerum sunt suscipit voluptate! Ad animi at atque aut consectetur consequuntur cum cumque debitis delectus dolorem doloremque ducimus et ex exercitationem expedita illo incidunt itaque iure laboriosam libero magni, minus nesciunt nihil nobis non nostrum numquam obcaecati optio quae quam, qui quidem repellat sapiente similique soluta suscipit veniam? Autem dolor dolores fugit nesciunt, odit officia quod. Assumenda autem delectus explicabo id placeat porro reiciendis tempore! Autem delectus dolor doloremque dolores fugit iusto maiores officiis quidem quo saepe. Aperiam dolorem ducimus, ex fuga hic impedit iste itaque mollitia perferendis quod, repudiandae temporibus voluptas voluptatem! A aliquam amet, autem beatae consectetur eveniet magni, maiores modi perspiciatis quis sequi, sit suscipit? A ab assumenda atque consectetur consequatur consequuntur delectus deserunt enim esse eum ex facere fuga fugiat illum ipsam iure nemo nihil nulla placeat possimus quam qui quidem ratione repellat, repellendus saepe sed, suscipit unde vel voluptatum. Ad amet culpa delectus dolor dolore ducimus ea eaque eius eos est exercitationem facere facilis illo, illum inventore ipsa ipsum labore laudantium libero maxime molestias nam natus numquam pariatur porro provident quaerat quia sapiente sed sequi sit tempora vel voluptas! A consequuntur dolorem dolores doloribus facilis nemo non, quos voluptas! A ab, aliquam aliquid amet asperiores culpa eaque esse excepturi expedita facere fuga fugiat fugit iste iure libero magnam maxime minus mollitia necessitatibus nesciunt nihil nobis odit omnis optio pariatur quam quasi quia quidem quis quisquam rem repellat repellendus saepe ullam unde, voluptate voluptatem. Laboriosam nostrum tempore vel voluptatibus voluptatum. Aperiam consectetur cumque debitis, expedita facere minima minus necessitatibus voluptate voluptatibus. Animi eum minus modi necessitatibus nemo, ratione! Ad adipisci animi consequuntur cum dignissimos ea esse exercitationem ipsum modi molestiae optio, possimus, quam quas quasi quos sapiente tempore velit, voluptas. Ad aspernatur beatae consequatur debitis deleniti dolore dolores, fugiat laborum minus modi possimus quis repellat similique? Ab alias atque beatae commodi culpa doloremque eius fuga illo incidunt ipsa molestiae necessitatibus nisi perferendis, reiciendis saepe sed velit voluptatem voluptates, voluptatibus voluptatum? A dolore eum, maiores quaerat quas quia saepe sed tempora.
+            При размещении двух и более дочерних элементов внутри родительского
+            Как быть, если надо и жирный, и красный одновременно?
+            Более поздний стиль перезаписывает более ранний.<br>
+            Пример: Надпись возле красной стрелки
         </details>
-    <details>
-    <summary>
-        Задание цвета горизонтальной линии HR через стили?
-    </summary>
 
-    Цвет задать через стиль не получается. Только через <pre> hr color="red" в самом теге hr.</pre>
+        <details>
+            <summary>
+                Про конфликт стилей-2
+            </summary>
 
-    </details>
-    <!--</div>-->
-</div>
+            При размещении двух и более дочерних элементов внутри родительского одно свойство брокирует другое.<br>
+            <a href="about.html">Пример =〉</a><br>Сравнить внешний вид кнопок главного меню в хедере на главной странице
+            и на
+            странице о компании
+
+        </details>
+        <details>
+            <summary class="text-red1">
+                Как добавить скроллинг встраиваемый объект, ограниченный по ширине и высоте? Раскрыть детали абзаца
+            </summary>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis consequatur cum debitis, deleniti
+            dolor dolorem enim eos magni placeat praesentium quas quasi quo ullam unde veniam voluptatem. Aliquid, animi
+            beatae blanditiis culpa distinctio ducimus earum enim est, eum facere ipsa magnam magni nemo, neque officiis
+            porro quasi quod reiciendis reprehenderit sapiente tempora tenetur veritatis voluptates. Aperiam, autem
+            culpa dolores eius eos excepturi fuga id ipsa iure perferendis, praesentium, provident quasi quisquam quod
+            vel. Accusantium amet asperiores aspernatur corporis delectus distinctio dolor eius eligendi est eveniet
+            fuga fugiat harum hic impedit in inventore magnam magni molestiae molestias mollitia non officia omnis
+            perspiciatis provident quaerat quam quas quia rem repellat repellendus reprehenderit rerum sunt suscipit
+            tempora tenetur, veniam vero? Ab aperiam earum eligendi facere odio recusandae reprehenderit sit ut. Amet
+            asperiores consectetur, culpa dolore doloremque est harum hic, maxime neque nostrum nulla suscipit, veniam?
+            Alias, aliquam aliquid asperiores consequatur culpa dolore doloremque eius eligendi ex, facilis illum
+            inventore labore laudantium magni maiores molestias mollitia neque nesciunt numquam optio perferendis
+            quaerat quo reiciendis sed sint vel velit vitae! A accusamus, consequatur eos ex explicabo laboriosam, nam
+            nihil nostrum perspiciatis possimus quos soluta tenetur. Accusamus alias aliquam aspernatur dicta
+            dignissimos enim excepturi facilis fuga in laudantium modi, nobis odit officia optio, perferendis quam, quas
+            quo quod repellat sit tenetur ut voluptas voluptate voluptatem voluptatibus! At beatae harum hic ipsa ipsam
+            laudantium nihil obcaecati placeat praesentium, quasi. Accusamus alias aspernatur atque autem blanditiis
+            deserunt dignissimos dolorem dolores eius eum eveniet ipsam iste labore laborum molestiae molestias mollitia
+            natus necessitatibus odit officia possimus provident qui quibusdam quos saepe, similique tenetur totam ut
+            veritatis voluptas. Aperiam autem blanditiis consequuntur corporis culpa deserunt dignissimos distinctio
+            dolores dolorum, ea earum, error expedita id incidunt ipsum laborum nobis nostrum obcaecati perspiciatis
+            praesentium quaerat quisquam quos reprehenderit saepe sed sequi sint sunt suscipit temporibus totam velit
+            voluptate voluptatem voluptatum. Adipisci autem excepturi exercitationem minus neque omnis ullam. Ab amet
+            commodi, delectus deserunt dicta dolore ducimus earum eos ex excepturi exercitationem hic illo ipsam ipsum
+            iure iusto, labore maiores mollitia nam neque non numquam obcaecati officia optio perspiciatis reiciendis,
+            rem sequi sit soluta suscipit temporibus totam ullam vero! Ab autem beatae consequatur, eum eveniet illum
+            ipsam, libero minus nemo non, odio odit quia tempore totam velit! Ad cum eos, exercitationem illo optio
+            quidem repellat tempora ullam? Atque autem beatae consectetur distinctio dolor, doloremque enim error
+            exercitationem incidunt minima nihil obcaecati perferendis quae quaerat quasi sint, vel. Asperiores at
+            autem, beatae delectus dignissimos error eum, facere illum inventore laudantium maiores nostrum qui quod rem
+            repellat tenetur voluptates. Ab adipisci aliquid aperiam, culpa cum dicta doloremque eius ex facere
+            inventore iusto labore maiores nostrum perferendis quae quas quia reprehenderit repudiandae tempore tenetur
+            totam vel veritatis voluptas voluptatibus voluptatum? Accusamus animi, cumque dolor, eaque eligendi
+            excepturi illo quaerat quia reprehenderit sed tempore, vel. Accusamus dignissimos dolorem eaque eligendi
+            esse eveniet inventore ipsam labore mollitia, necessitatibus neque nesciunt, non possimus sunt tempora ullam
+            vitae voluptas voluptatem. Architecto esse natus, non nostrum ratione reprehenderit similique vero voluptas!
+            Corporis dicta dolore ea iste iure obcaecati recusandae suscipit. Ab aliquid deleniti dolorem dolorum,
+            eligendi eveniet illum ipsam labore libero, magni molestiae nemo nisi optio perspiciatis quis sit temporibus
+            ullam ut, velit vitae voluptate voluptatem voluptatibus! Alias amet aperiam aspernatur atque beatae, culpa
+            cum distinctio dolorum eaque et eveniet exercitationem facere fugit ipsa ipsam labore laboriosam minima
+            nihil omnis, optio perferendis quam repudiandae saepe similique sit ullam voluptas voluptate! Accusantium
+            animi architecto asperiores assumenda, autem corporis culpa cumque delectus deserunt dicta eveniet facere
+            facilis fugiat inventore itaque laudantium maiores modi nihil quia quo ratione repellendus reprehenderit
+            sequi similique sint tempore ullam veritatis vitae voluptas voluptatum! Ad ea est eveniet ex expedita ipsam
+            laboriosam nesciunt recusandae. Aut beatae consequuntur doloribus eius enim esse est harum, nemo nihil odit
+            quaerat quas, ratione repellendus sunt suscipit tempora totam ullam! At, atque culpa debitis dolor ducimus
+            ea earum enim error est facere hic ipsam maiores minus modi mollitia neque nihil nobis nostrum perspiciatis
+            possimus qui quibusdam, recusandae repellendus, repudiandae rerum sunt suscipit voluptate! Ad animi at atque
+            aut consectetur consequuntur cum cumque debitis delectus dolorem doloremque ducimus et ex exercitationem
+            expedita illo incidunt itaque iure laboriosam libero magni, minus nesciunt nihil nobis non nostrum numquam
+            obcaecati optio quae quam, qui quidem repellat sapiente similique soluta suscipit veniam? Autem dolor
+            dolores fugit nesciunt, odit officia quod. Assumenda autem delectus explicabo id placeat porro reiciendis
+            tempore! Autem delectus dolor doloremque dolores fugit iusto maiores officiis quidem quo saepe. Aperiam
+            dolorem ducimus, ex fuga hic impedit iste itaque mollitia perferendis quod, repudiandae temporibus voluptas
+            voluptatem! A aliquam amet, autem beatae consectetur eveniet magni, maiores modi perspiciatis quis sequi,
+            sit suscipit? A ab assumenda atque consectetur consequatur consequuntur delectus deserunt enim esse eum ex
+            facere fuga fugiat illum ipsam iure nemo nihil nulla placeat possimus quam qui quidem ratione repellat,
+            repellendus saepe sed, suscipit unde vel voluptatum. Ad amet culpa delectus dolor dolore ducimus ea eaque
+            eius eos est exercitationem facere facilis illo, illum inventore ipsa ipsum labore laudantium libero maxime
+            molestias nam natus numquam pariatur porro provident quaerat quia sapiente sed sequi sit tempora vel
+            voluptas! A consequuntur dolorem dolores doloribus facilis nemo non, quos voluptas! A ab, aliquam aliquid
+            amet asperiores culpa eaque esse excepturi expedita facere fuga fugiat fugit iste iure libero magnam maxime
+            minus mollitia necessitatibus nesciunt nihil nobis odit omnis optio pariatur quam quasi quia quidem quis
+            quisquam rem repellat repellendus saepe ullam unde, voluptate voluptatem. Laboriosam nostrum tempore vel
+            voluptatibus voluptatum. Aperiam consectetur cumque debitis, expedita facere minima minus necessitatibus
+            voluptate voluptatibus. Animi eum minus modi necessitatibus nemo, ratione! Ad adipisci animi consequuntur
+            cum dignissimos ea esse exercitationem ipsum modi molestiae optio, possimus, quam quas quasi quos sapiente
+            tempore velit, voluptas. Ad aspernatur beatae consequatur debitis deleniti dolore dolores, fugiat laborum
+            minus modi possimus quis repellat similique? Ab alias atque beatae commodi culpa doloremque eius fuga illo
+            incidunt ipsa molestiae necessitatibus nisi perferendis, reiciendis saepe sed velit voluptatem voluptates,
+            voluptatibus voluptatum? A dolore eum, maiores quaerat quas quia saepe sed tempora.
+        </details>
+        <details>
+            <summary>
+                Задание цвета горизонтальной линии HR через стили?
+            </summary>
+
+            Цвет задать через стиль не получается. Только через
+            <pre> hr color="red" в самом теге hr.</pre>
+
+        </details>
+        <!--</div>-->
+    </div>
     </div>
 
 

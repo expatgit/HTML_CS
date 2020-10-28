@@ -3,11 +3,15 @@
 #submit {
     float: left;
     background: yellowgreen;
+    margin-top: 20px;
+
 }
 
 #reset {
     float: right;
     background: salmon;
+    margin-top: 20px;
+
 }
 
 .login_form {
@@ -15,9 +19,11 @@
     padding: 50px;
     background: silver;
     position: fixed; top: 50%; left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    /*-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);*/
     transform: translate(-50%, -50%);
+    border-radius: 3%;
+
 }
    /* height: auto;
     max-width: 300px;
@@ -38,14 +44,18 @@
     -ms-transform: translate(50%, 50%);*/
     transform: translate(-70%, -70%);
     width: 450px;
-    height: auto;
-    scroll-behavior: auto;
+    height: 450px;
     text-align: justify;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+
 
 }
 
 .comment1 {
     text-align: inherit;
+    font-style: italic;
 }
 
 .arrow {
@@ -57,11 +67,32 @@
     -ms-transform: translate(50%, 50%);*/
     transform: rotate(-45deg);
     max-width: 300px;
-    text-decoration: red;
+    color: red;
+    font-weight: bold;
 
 }
 
 .text-red1 {
     color: red;
+}
+
+.text-shadow1 {
+    box-shadow: 5px 0px 30px red;
+    border-radius: 50%;
 
 }
+
+.shadow-block1 {
+    box-shadow: -5px -5px 100px skyblue inset;
+}
+
+.shadow-btn1 {
+    box-shadow: 0px 10px 10px ;
+}
+
+input {
+    background: yellow;
+
+}
+
+

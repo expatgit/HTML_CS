@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+</head>
+<body>
+<form autocomplete="on" action="#" method="post"> <!-- границы формы -->
+    <!--action - обработчик данных на сервере-->
+    <!--method - метод передачи данных на сервер-->
+    <div>
+        <!--label привязан кэлементу с id = login-->
+        <label for="email">E-mail:</label>
+        <!-- однострочное текстовое поле -->
+        <!-- placeholder - подсказка -->
+        <input name="email" id="email" type="email" placeholder="Введите e-mail"
+               required autofocus>
+        <!-- maxlength="10" -->
+    </div>
+    <div>
+        <!--label привязан кэлементу с id = pass-->
+        <label for="pass">Пароль:</label>
+        <!-- однострочное текстовое поле, вводимые данные скрываются-->
+        <!-- value не использовать, как подсказку (placeholder)
+             обычно - пользовательский ввод / выбор-->
+        <input name="password" id="pass" type="password" placeholder="Введите пароль"
+               required minlength="6">
+    </div>
+    <div>
+        <!-- поле, вложенное в тег label будет связано с ним,
+        аналогично привязке по id-for -->
+        <!-- checked - чекбокс выделен по умолчанию
+        (доступен только для input type=checkbox или type=radio)-->
+        <label>
+            Запомнить меня:
+            <input type="checkbox" checked>
+        </label>
+    </div>
+    <div>
+        <input  type="submit" value="Войти">
+        <!-- type="submit" - отправка данных на сервер -->
+        <!-- type="button" - просто кнопка -->
+        <!-- type="reset" - очистка полей формы -->
+    </div>
+</form>
+<!-- required - поле обязательно для заполения -->
+<!-- maxlength - для текстовых полей -->
+<!-- minlength - для текстовых полей -->
+
+</body>
+</html>

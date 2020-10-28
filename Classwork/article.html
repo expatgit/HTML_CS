@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- article.html сраница для одной статьи -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Статья</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-orange-1 text-brown-9">
+<header class="bg-brown-7">
+    <nav class="container"> <!-- навигация (меню сайта)-->
+        <a class="text-brown-1" href="index.html">Главная</a> <!-- ссылка -->
+        <a class="text-brown-1" href="articles.html">Статьи</a> <!-- ссылка -->
+        <a class="text-brown-1" href="#">Магазин</a> <!-- ссылка -->
+        <a class="text-brown-1" href="#">Контакты</a> <!-- ссылка -->
+    </nav>
+</header>
+
+<main class="container main-margin">
+    <article>
+        <h1>Про изготовление печенья</h1>
+        <a href="#ingredients">Перейти к ингредиентам</a>
+<!--        значение_атрибута_id элемента, к которому собираемся
+            осущесвить переход-->
+<!--        href="страница.html#значение_атрибута_id"-->
+<!--        href="#значение_атрибута_id"-->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Alias, aut cumque facilis in molestiae obcaecati
+            reprehenderit. Ab aliquid amet aut consequuntur cum
+            cumque dolorem doloremque eos error esse ex expedita
+            explicabo id iste laboriosam molestiae nihil nulla
+            numquam perspiciatis quas quod repudiandae rerum sint,
+            sit, veritatis vitae, voluptate voluptatem?
+            Commodi dignissimos, eius est explicabo hic ipsam
+            obcaecati pariatur voluptates voluptatibus?
+        </p>
+        <!--все изображения правильно хранить в отдельной
+        директории-->
+        <!--alt - альтернативный текст-->
+        <img src="img/cake.jpg" alt="печеньки" height="300" width="600">
+    </article>
+    <!--атрибут id доступен всем тегам, обозначает
+    уникальный идентификатор элемента
+    в рамках одной html страница значения атрибута id
+    не должны дублироваться-->
+    <table id="ingredients"> <!-- границы таблицы --> <!-- border="1" задает рамку, вместо него нужно использовать css-->
+        <caption>Ингредиенты</caption>
+        <tr> <!-- строка таблицы -->
+            <th>Ингредиент</th> <!-- ячейка таблицы-->
+            <th>Количество</th>
+            <th>Ед.измерения</th>
+        </tr>
+        <tr>
+            <td>Мука</td> <!-- ячейка таблицы-->
+            <td>2</td>
+            <td>кг.</td>
+        </tr>
+        <tr>
+            <td>Сахар</td> <!-- ячейка таблицы-->
+            <td>1</td>
+            <td>стакан</td>
+        </tr>
+    </table>
+</main>
+
+<footer class="bg-brown-7">
+    Подвал сайта
+</footer>
+</body>
+</html>

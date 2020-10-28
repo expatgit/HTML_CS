@@ -1,0 +1,89 @@
+<!doctype html> <!-- указание на html 5 -->
+<html lang="ru"> <!-- граница html документа -->
+<head>
+    <!--подключение  css стилей-->
+    <!--подключение javascript-->
+    <!--располагаются мета теги-->
+    <meta charset="UTF-8"> <!-- кодировка страницы -->
+    <meta name="description" content="описание">
+    <meta name="keywords" content="one, two, etc">
+    <meta name="author" content="Ifmo Web">
+    <!--подключение иконки вкладки-->
+    <!--заголовок вкладки-->
+    <title>Главная</title> <!-- заголовок страницы -->
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--    <link rel="stylesheet" href="css/style.css">-->
+</head>
+<body class="bg-orange-1 text-brown-9">
+<!--внутри тега body разполагаются теги,
+отвечающие за внешний вид страницы-->
+<!-- иконку(логотип), навигацию(меню), форма поиска и тд -->
+<header class="bg-brown-7">
+    <nav class="container"> <!-- навигация (меню сайта)-->
+        <a class="text-brown-1" href="index.html">Главная</a> <!-- ссылка -->
+        <a class="text-brown-1" href="articles.html">Статьи</a> <!-- ссылка -->
+        <a class="text-brown-1" href="#">Магазин</a> <!-- ссылка -->
+        <a class="text-brown-1" href="#">Контакты</a> <!-- ссылка -->
+    </nav>
+</header>
+<main class="container main-margin"> <!-- для отображения основного содержимого страницы -->
+    <section> <!-- раздел, мб с заголовком раздела -->
+        <h2>Популярные статьи</h2> <!-- теги заголовков -->
+        <article class="shadow-block"> <!-- для компановки элементов можно использовать тег div -->
+            <h3>Работа с глиной</h3>
+            <p> <!--текстовый абзац-->
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Amet <span class="text-shadow">asperiores atque</span>
+                autem dolorem dolores eos
+                facilis fugiat impedit inventore magni molestiae
+                <span class="text-shadow">fugiat impedit inventore</span> magni molestiae nobis quae quia
+                quisquam sint sit tempore, tenetur veniam.
+            </p>
+            <a class="shadow-btn more-btn bg-brown-9 text-brown-1 text-center" href="article.html">Подробнее</a>
+        </article>
+        <article class="shadow-block">
+            <h3>Про изготовление печенья</h3>
+            <p> <!--текстовый абзац-->
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Amet asperior<span class="text-shadow">fugiat impedit inventore</span>em dolorem dolores eos facilis
+                fugiat impedit inventore magni molestiae nobis quae quia
+                quisqu<span class="text-shadow">fugiat impedit inventore</span>mpore, tenetur veniam.
+            </p>
+            <a class="shadow-btn more-btn bg-brown-9 text-brown-1 text-center" href="article.html">Подробнее</a>
+        </article>
+
+    </section>
+    <section>
+        <h2>Новые товары</h2>
+        <div class="item">
+            <q class="text-brown-9">Lorem ipsum dolor.</q>
+            <img src="img/cake.jpg">
+            <div>
+                <a class="text-brown-9 bg-brown-1" href="#">Купить</a>
+            </div>
+        </div>
+        <div class="item">
+            <q class="text-brown-9">Lorem ipsum dolor.</q>
+            <img src="img/goncharnoe-delo.jpg">
+            <div>
+                <a class="text-brown-9 bg-brown-1" href="#">Купить</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<a href="#" class="up-btn text-brown-1 bg-brown-9 material-icons">arrow_upward</a>
+
+<footer class="bg-brown-7">
+    Подвал сайта
+</footer>
+</body>
+</html>
+<!--ctrl + / добавить или удалить комментарий-->
+<!--
+ctrl + shift + /
+добавить или удалить многострочный комментарий
+-->
+<!--плагин emmet для быстрой верстки-->
+

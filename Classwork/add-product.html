@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление товара</title>
+</head>
+<body>
+<!--категория-->
+<!--название-->
+<!--описание-->
+<!--дата изготовления-->
+<!--изображения-->
+<!--стоимость-->
+<!-- enctype="multipart/form-data" - позволит отправить файлы на сервер-->
+<form action="#" method="post" enctype="multipart/form-data">
+    <div>
+        <!-- выпадающий список -->
+        <!-- multiple - позволяет выбрать несколько пунктов списка-->
+        <!--size="2" - количество отображаемых option-->
+        <!--selected - элемент выбран по умолчанию-->
+        <!--label привязан к элементу с id category-->
+        <label for="category">Категория товара:</label>
+        <select id="category">
+            <optgroup label="Глина">
+                <option>Посуда</option>
+                <option>Скульптуры</option>
+            </optgroup>
+            <optgroup label="Кожа">
+                <option>Обувь</option>
+                <option>Сумки</option>
+            </optgroup>
+            <optgroup label="Кондитерские изделия">
+                <option>Торты</option>
+                <option>Печенья</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div>
+        <label for="title">Название товара:</label>
+        <input id="title" type="text" disabled>
+    </div>
+
+    <div>
+        <label for="description">Описание товара:</label>
+        <!-- многострочный ввод текста -->
+        <textarea id="description" placeholder="Введите описание">
+        </textarea>
+    </div>
+
+    <div>
+        <label for="date">Дата изготовления:</label>
+        <input type="date" id="date">
+        <!--datetime-local-->
+        <!--time-->
+        <!--week-->
+        <!--month-->
+    </div>
+
+    <div>
+        <label for="images">Фото товара</label>
+        <!-- input type="file" multiple -> name="images[]"-->
+        <input name="images[]" id="images" type="file"
+               multiple accept="image/*">
+    </div>
+
+    <div>
+        <label for="price">Цена товара:</label>
+        <input id="price" type="number" min="0">
+    </div>
+
+<!--    fieldset не используется вне формы,
+        legend не используется вне fieldset -->
+    <fieldset disabled> <!-- группировка элементов внутри формы-->
+        <!--заголовок fieldset-->
+        <legend>Дополнительная информация</legend>
+        <!--группа чекбоксов-->
+
+        <div>
+            <p>Доступные варианты оплаты</p>
+            <label>Перевод на счет
+                <input type="checkbox" value="1" name="pay[]">
+            </label>
+            <label>Оплата наличными
+                <input type="checkbox" value="2" name="pay[]">
+            </label>
+        </div>
+
+        <div>
+            <p>Возможен ли возврат</p>
+<!-- группа радиокнопок (доступен один из нескольких вариантов)-->
+            <label>
+                Да <input type="radio" value="yes" name="back">
+            </label>
+            <label>
+                Нет <input type="radio" value="no" name="back">
+            </label>
+        </div>
+
+    </fieldset>
+
+    <div>
+        <button type="submit">Добавить</button>
+        <button type="reset">Очистить</button>
+<!--        <input type="submit" value="Добавить">-->
+        <!-- type="submit" - отправка данных на сервер -->
+        <!-- type="button" - просто кнопка -->
+        <!-- type="reset" - очистка полей формы -->
+    </div>
+</form>
+
+</body>
+</html>
