@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+
+}
+
+.authorization {
+    background-image: url("../img/cake.jpg");
+    background-repeat: no-repeat;
+    background-position: center; /*DZ*/
+    background-size: cover; /*DZ*/
+    min-height:  100vh; /*unit for height. 100vh - 100% from browser height*/
+   /* opacity: 0.3;*/ /*opacity gives opacity to all elements inside container*/
+    position: relative;
+    z-index: 1;
+}
+
+.authorization:before {
+    content: ""; /*empty content для неотображения контента в псевдоелемента*/
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(255,255,255,0.8);
+    z-index: -1;
+}
+
+/*стили формы*/
+.authorization form {
+    width: 450px;
+    border-radius: 10px;
+    background: #FF4E00;
+    padding: 40px;
+    transform: translate(60%, 100%);
+}
+
+/*сброс стилей input*/
+
+input {
+    border-style: none;
+    outline-style: none; /*outline - контур элемента, появляется когда input в фокусе*/
+    background: transparent;
+
+}
+
+input[type=text],
+input[type=password] {
+    width: 400px;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    color: white;
+    padding: 0 0 5px 30px;
+}

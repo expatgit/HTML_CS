@@ -1,0 +1,40 @@
+
+
+
+
+/*selection .color::selection {
+    color: yellow;
+}*/
+
+/*
+selection .background {
+    color: orangered;
+}
+
+*/
+
+
+
+/*
+
+.before/after*/
+/*
+.before::before {
+    content: "*";
+    color: red;
+    margin-right: 5px
+    }
+*//*области до или после элемента, но не следующий элемент. Before after - строчные элементы. Можно пере
+делать в блочный стилем*/
+/*Если в before или after надо поменсти тест - используем свойство content*/
+
+/*
+after::after {
+    content: "\23bsr"
+    margin-left: 5px;
+
+}
+
+
+*/
+

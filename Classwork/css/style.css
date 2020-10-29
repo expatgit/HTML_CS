@@ -62,6 +62,24 @@ td {
 
 }
 
+tr:nth-child(odd){/*Нечетные tr*/
+    background: #f7f5f4;
+}
+tr:nth-child(even){/*четные tr*/
+    background: #EFEBE9;
+}
+
+tr:first-child {
+    background: #BCAAA4;
+}
+tr:hover {
+    background: #BCAAA4;
+}
+
+.item:hover div {
+    display: block
+    /*background: #BCAAA4;*/
+}
 /* селекторы классов */
 .container {
     max-width: 1200px; /* максимальная ширина */
