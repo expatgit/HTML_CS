@@ -1,19 +1,35 @@
 header {
-    height: 100px;
+    height: 50px;
     background: url("../bg.jpg");
     position: fixed;
     right: 0;
     left: 0;
     top: 0;
-    z-index: 3;
+    z-index: 6;
 }
+
+.header-nav {
+    position: absolute; top: 50%; left: 30%;
+    /*display: block;*/
+}
+
+/*#main_menu {
+
+    top: 20px;
+    left: 20px;
+}*/
 
 #main_menu a {
     background: #EFEBE9;
     margin-right: 10px;
     padding: 5px;
     border-radius: 15%;
-    align-self: center;
+
+}
+
+body {
+    position: relative;
+    z-index: 5;
 }
 
 a {
@@ -35,6 +51,7 @@ button {
 
 .bg-green1 {
     background: aquamarine;
+    box-shadow: 0px 0px 1200px black inset;
 
 }
 
@@ -44,14 +61,23 @@ button {
 
 }
 
+.text-yellow {
+    color: deeppink;
+    font-size: 26px;
+    font-weight: bold;
+}
+
 .autorize {
-    width: auto;
-    background: darkgray;
-    margin-top:65px;
+
+
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    z-index: 6;
+   /* margin-top:65px;
     padding: 5px;
-    padding-right: 10px;
-    border: 1px double green;
-    float: right;
+    border: 1px double green;*/
+    /*float: right;*/
     text-align: center;
 }
 
@@ -65,15 +91,32 @@ button {
   /*  padding-top: 0px;*/
 }
 
+.pic_align_left {
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+
 .main_container {
     max-width: 1200px;
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 120px;
+    position: relative;
+    z-index: 5;
+
 }
 
 .shadow-block {
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    height: auto;
+}
+
+.shadow-block img {
+    box-shadow: -3 3px 4px rgba(0, 0, 0, 0.5);
+    padding: 0;
 }
 
 .shadow-btn {
@@ -84,3 +127,28 @@ button {
     text-shadow: 5px 5px 10px #3E2723;
 }
 
+.text-shadow-h1 {
+    text-shadow: 5px 5px 5px #5D4037;
+}
+
+.text-shadow1 {
+    text-shadow: 5px 5px 10px red;
+    border: #5D4037 1px solid;
+}
+
+.comment {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background: #EFEBE9;
+}
+
+aside {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background: #EFEBE9;
+    max-width: 250px;
+    padding: 10px;
+    z-index: 5;
+}
