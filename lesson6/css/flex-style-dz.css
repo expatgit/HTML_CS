@@ -1,0 +1,126 @@
+.padding {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+header,
+footer {
+    height: 100px;
+    background: orangered;
+}
+
+header {
+    display: flex;
+    margin: 0;
+    height: 100px;
+}
+
+body {
+    background-color: aquamarine;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+
+    justify-content: space-around;
+    flex-grow: 1;
+    line-height: 50px;
+    margin-top: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 34px;
+    border: 5px solid transparent;
+
+}
+
+header nav a:hover {
+
+    border-bottom: 2px solid indigo;
+}
+
+header nav :nth-child(1) {
+    background-color: aqua;
+}
+
+header nav :nth-child(2) {
+    background-color: white;
+}
+
+header nav :nth-child(3) {
+    background-color: #5D4037;
+}
+
+header nav :nth-child(4) {
+    background-color: yellowgreen;
+}
+
+header nav :nth-child(5) {
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+aside {
+    background: #cc3300;
+    display: flex;
+    flex-grow: 1;
+}
+
+aside div {
+    text-align: center;
+    flex-grow: 1;
+
+    border: 1px solid black;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.main-block {
+    flex: 1 0 auto; /*1 - flex-grow (увеличение), 1 - максимально возможный размер
+    , 0 - уменьшение(shrink), auto - basis
+     flex: 1 для всех элементов: все элементы занимают один размер*/
+    /*flex1: 1, flex2:1, flex3:0 - f3 займет столько, сколько надо для отображения содержимого, f1,f2 -
+     поделят место поровну*/
+
+    /*shrink 0 - пропорционально не уменьшаем*/
+}
+
+
+footer {
+    flex: 0 0 auto;
+}
+
+.margin {
+    text-align: center;
+    margin: 10px;
+}
+
+#123 {
+    flex: 2;
+    color: firebrick;
+}
+
+.col-6 img {
+    width: 100%;
+    height: 100%;
+}

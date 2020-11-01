@@ -8,55 +8,100 @@
 </head>
 <body>
 
-<header>
+<header class="flex-column">
     <nav>
-        <a href="#">Раздел 1</a>
-        <a href="#">Раздел 2</a>
-        <a href="#">Раздел 3</a>
-        <a href="#">Раздел 4</a>
-        <a href="#">Раздел 5</a>
+        <a href="#">LINK 1</a>
+        <a href="#">LINK 2</a>
+        <a href="#">LINK 3</a>
+        <a href="#">LINK 4</a>
+        <a href="#">LINK 5</a>
 
     </nav>
 </header>
 
-<div class="main-block flex-row">
-    <aside class="col-1 flex-column">
-        <div><a href="#"> 1111111</a></div>
-        <div><a href="#">1222221</a></div>
-        <div><a href="#">333333</a></div>
-        <div><a href="#">444444</a></div>
+<div class="main-block flex-row"><!--ЛЕВОЕ БОКОВОЕ МЕНЮ С 4 ЭЛЕМЕНТАМИ-->
+    <aside class="col-1 flex-column padding">
+        <div><a href="#"> VERTICAL LINK 1</a></div>
+        <div><a href="#"> VERTICAL LINK 2</a></div>
+        <div><a href="#"> VERTICAL LINK 3</a></div>
+        <div><a href="#"> VERTICAL LINK 4</a></div>
 
     </aside>
     <main class="col-11"> <!--Основная часть справа от бокового меню-->
 
-        <div class="flex-row margin"> <!--Первый ряд--> <!--Делим на три части-->
-            <div class="col-1"></div>
-            <div class="col-10 img1"></div>
-            <div class="col-1"></div>
+            <div class="flex-row margin"> <!--Первый ряд--> <!--Делим на три части-->
+                <div class="col-1"></div>
+                <div class="col-10 padding" id="123"><img src="111.png" class="img1"></div>
+                <div class="col-1"></div>
+
+            </div>
+
+            <div class="flex-row"><!--Второй ряд--> <!--4 элемента, -->
+                <div class="col-3 padding flex-column">
+                    <div class="padding">ЗАГОЛОВОК 1</div>
+                    <div class="padding"><img src="111.png"></div>
+                </div>
+                <div class="col-3 padding flex-column">
+                    <div class="padding">ЗАГОЛОВОК 2</div>
+                    <div class="padding"><img src="111.png"></div>
+                </div>
+                <div class="col-3 padding flex-column">
+                    <div class="padding">ЗАГОЛОВОК 3</div>
+                    <div class="padding"><img src="111.png"></div>
+                </div>
+                <div class="col-3 padding flex-column">
+                    <div class="padding">ЗАГОЛОВОК 4</div>
+                    <div class="padding"><img src="111.png"></div>
+                </div>
+            </div>
+
+            <div class="flex-row"> <!--Третий ряд, 3 элемента-->
+                <div class="col-6 flex-row padding">
+                    <div class="col-6">
+                        <img src="111.png">
+                    </div>
+                    <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti dignissimos distinctio doloremque dolores eius eligendi, explicabo fugiat hic illum ipsum, itaque magni minus, pariatur possimus quasi quisquam ratione totam ullam voluptatibus. A accusamus alias aliquid delectus dolor dolore dolorum eum, excepturi exercitationem expedita facilis, hic laudantium modi nesciunt nihil nulla obcaecati optio pariatur quisquam saepe sunt ut velit vitae! Dolorum ducimus illum incidunt itaque quidem similique, veritatis voluptatem. Ab ad aliquid atque beatae corporis cupiditate delectus deserunt dicta distinctio earum facilis fuga fugit illum ipsum iste magni maiores neque nobis, odit omnis porro possimus quibusdam, quo quos rem rerum sit suscipit tenetur veritatis voluptatum. Alias aliquam autem corporis dignissimos, distinctio dolore earum inventore natus neque nesciunt quis repellendus sapiente voluptates? Corporis rerum, vitae! Delectus deserunt esse et facere nesciunt nostrum quaerat quidem sint velit vero. Exercitationem facilis, incidunt iusto libero, minus odit quia quis quod ratione repellat reprehenderit voluptas?
+                    </div>
+                </div>
+                <div class="col-3 padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam, culpa harum illo inventore iure labore nisi nostrum officiis quod totam, ut, voluptatibus? Cupiditate dolor dolorem est eum excepturi harum id incidunt, inventore ipsa libero minima minus nesciunt, omnis optio placeat quis quo reiciendis sapiente veritatis voluptatem? Aliquam, asperiores debitis distinctio enim, et iste laboriosam magni maiores necessitatibus nostrum officiis quae, quas quasi sint suscipit ullam velit. A at, aut corporis dolorem expedita fuga, incidunt iure laudantium mollitia quidem soluta ut. Accusamus ad aliquam asperiores dolores doloribus excepturi explicabo facere, hic, iste laboriosam laudantium maxime numquam pariatur praesentium quas quia quibusdam quis recusandae tenetur voluptate. Animi consequatur deserunt earum est, expedita maiores maxime pariatur possimus saepe velit. Animi aperiam dicta dolorem itaque molestias natus quisquam recusandae, rem reprehenderit. At blanditiis dolorum eaque explicabo harum incidunt laborum, molestias nostrum provident voluptatum! Ad animi aperiam assumenda atque autem delectus dolor doloremque error eum exercitationem explicabo fugit illum impedit iste libero nam non perspiciatis praesentium quaerat quasi quibusdam quo, reiciendis repellendus saepe tenetur velit voluptatem voluptatum. Aliquam blanditiis distinctio dolore numquam vel. Ab assumenda consequatur debitis enim et, eveniet facere fugit, hic ipsa iste labore laudantium maiores natus nisi, perspiciatis possimus praesentium ullam.
+                </div>
+                <div class="col-3 padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores consequuntur delectus dicta distinctio dolore iusto mollitia odit quasi, voluptatibus? A animi, consequatur consequuntur dolorum eos odit provident quos veniam. A aliquam atque, autem commodi consectetur corporis, debitis dicta ducimus, eos et facere hic labore laudantium nihil quo recusandae repellat sit soluta tempora voluptatibus? A aspernatur deserunt dicta doloribus earum eligendi enim expedita facere harum ipsa ipsam itaque labore laboriosam libero mollitia obcaecati, pariatur quaerat quam quas qui quia rem repudiandae soluta tempore tenetur vel velit veritatis? Corporis dicta doloremque enim magnam quibusdam reprehenderit voluptate. A alias, atque, consequatur distinctio dolorem esse impedit iste magni modi nisi nulla quae, quidem quisquam quos temporibus tenetur voluptatum. Animi assumenda at aut culpa earum, impedit molestiae non reiciendis! Aliquam animi consequatur, earum eligendi error excepturi, explicabo facilis laboriosam maiores neque nulla odit optio perspiciatis placeat quam quasi reprehenderit voluptate. Alias, dicta dolore ducimus ea eius expedita facilis id laborum minima mollitia nam neque nihil officiis optio ratione reprehenderit soluta unde. Fugiat hic molestias sed sequi vel, vitae! Autem beatae cumque dicta error id ipsa! Accusamus ad ea eligendi exercitationem hic illum incidunt maiores necessitatibus nihil qui, repellendus sit unde. Aperiam asperiores corporis ea et expedita fuga maiores nostrum quae, quis recusandae sed totam veritatis. Ab accusantium ad aliquid animi architecto consectetur corporis dicta, distinctio doloremque ducimus in iure labore laboriosam laudantium libero maiores molestiae nam natus nesciunt nulla praesentium, quibusdam quis saepe sed soluta, suscipit vero voluptate! Eum odit placeat porro tenetur ullam ut veritatis? Alias blanditiis debitis dicta explicabo hic laboriosam maxime necessitatibus nihil nobis, perferendis provident sint tenetur ut veniam vero. Exercitationem fugiat molestias nobis vero. Consequatur dignissimos eligendi exercitationem magni quaerat quas rem, repellat velit vitae voluptates? At dicta eius incidunt ipsum quae. Accusantium consectetur dolorum fugiat odit, quasi sequi!
+                </div>
+
+            </div>
+
+        <div class="flex-row padding"> <!--Третий ряд отзеркален-->
+            <div class="col-3 padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi cupiditate ea eaque, excepturi nisi obcaecati quisquam repudiandae voluptate voluptatum. Accusantium autem consectetur consequuntur delectus dolores ducimus eos error, est eum explicabo illum in inventore iusto laborum libero nesciunt provident qui quos, recusandae rerum saepe sequi suscipit totam, voluptas voluptates. Libero, minima, quaerat? Ab aspernatur cumque harum illo impedit itaque laborum numquam sequi! Accusamus accusantium consequatur cumque deleniti dicta, eius error facere fuga id illum ipsum, magnam maxime nobis odit officia omnis optio qui quod, reiciendis reprehenderit repudiandae sequi tempore ut. Accusamus alias animi aperiam cum illum laboriosam maiores, nemo neque sunt, ullam vero voluptates, voluptatum! Aliquid consequuntur, culpa cumque debitis delectus, dicta ducimus error esse fuga id incidunt magnam nemo numquam optio perferendis quasi reprehenderit saepe sit suscipit voluptas. Adipisci aspernatur at aut autem blanditiis consectetur dicta illo iure minus nam neque obcaecati quasi qui quibusdam, sequi similique tenetur.
+            </div>
+            <div class="col-3 padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fugiat ipsum laudantium libero voluptate? Dolore eligendi obcaecati quaerat quo quos sit sunt suscipit ullam! At commodi dicta harum odio provident, repellat sunt. A accusamus adipisci, aliquid amet aperiam assumenda commodi corporis culpa cum dolor eius ex exercitationem facilis iste modi neque numquam obcaecati odio perspiciatis, placeat quaerat repellendus repudiandae sequi sint totam vero voluptatem voluptatum! Consequuntur culpa dignissimos dolore ea, minima nobis porro recusandae? Aspernatur aut consequatur cumque esse eum id inventore ipsam, laborum numquam quam quidem quis sed similique totam voluptates? Consequuntur debitis deserunt doloremque enim et eum eveniet exercitationem expedita ipsam laboriosam minima molestiae nesciunt perferendis praesentium quo rem sequi, tempora temporibus ut vero vitae voluptates voluptatibus. Eius quaerat ratione ullam voluptatum! Ab alias aliquam aut autem beatae cumque deserunt dolore eaque earum enim ex excepturi fuga fugit harum illum libero maxime minus, natus odit provident quasi repudiandae sint temporibus tenetur unde velit veritatis vitae? A accusantium, aspernatur atque consequatur culpa deserunt dicta dignissimos doloremque enim et eveniet ex inventore magni maiores minima modi necessitatibus non nulla provident quo recusandae sapiente sed suscipit! Asperiores cupiditate delectus dolor eaque eius enim eos error esse harum ipsam iure, maiores minima nulla quis quisquam quo, sed similique sint suscipit vitae? Amet asperiores consequuntur cum deserunt dignissimos dolorem ducimus earum eius enim, et eum fuga inventore ipsam itaque libero molestias mollitia nostrum, pariatur quod saepe! Delectus facilis harum ipsam labore quo, repellat saepe sapiente. Aspernatur autem distinctio exercitationem ipsa laboriosam modi necessitatibus?
+            </div>
+            <div class="col-6 flex-row">
+                <div class="col-6 padding">
+                    <img src="111.png">
+                </div>
+                <div class="col-6 padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti dignissimos distinctio doloremque dolores eius eligendi, explicabo fugiat hic illum ipsum, itaque magni minus, pariatur possimus quasi quisquam ratione totam ullam voluptatibus. A accusamus alias aliquid delectus dolor dolore dolorum eum, excepturi exercitationem expedita facilis, hic laudantium modi nesciunt nihil nulla obcaecati optio pariatur quisquam saepe sunt ut velit vitae! Dolorum ducimus illum incidunt itaque quidem similique, veritatis voluptatem. Ab ad aliquid atque beatae corporis cupiditate delectus deserunt dicta distinctio earum facilis fuga fugit illum ipsum iste magni maiores neque nobis, odit omnis porro possimus quibusdam, quo quos rem rerum sit suscipit tenetur veritatis voluptatum. Alias aliquam autem corporis dignissimos, distinctio dolore earum inventore natus neque nesciunt quis repellendus sapiente voluptates? Corporis rerum, vitae! Delectus deserunt esse et facere nesciunt nostrum quaerat quidem sint velit vero. Exercitationem facilis, incidunt iusto libero, minus odit quia quis quod ratione repellat reprehenderit voluptas?
+                </div>
+            </div>
 
         </div>
 
-        <div class="flex-row"><!--Второй ряд--> <!--4 элемента, -->
-            <div class="col-3 margin flex-column">
-                <div class="margin">ЗАГОЛОВОК 1 </div>
-                <div class="margin"><img src="111.png"> </div>
+        <div class="flex-row"><!--пятый ряд -->
+            <div class="col-6 flex-row">
+                <div class="col-6 flex-column padding">
+                    <div class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloribus eaque esse eveniet, harum id laboriosam laudantium nesciunt nisi, placeat, qui quo quod recusandae repellendus sequi similique tempore temporibus totam vitae voluptatibus. Accusantium error explicabo molestiae odio vero? Ab adipisci consequuntur ea esse et maiores natus odio omnis quasi reprehenderit.
+                    </div>
+                    <div class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores debitis, deserunt excepturi expedita iste perferendis repellat? Eveniet necessitatibus nesciunt nihil nisi similique tempora voluptate? Amet deserunt dolorem dolorum ducimus earum nisi, quo soluta ut.
+                    </div>
+                </div>
+                <div class="col-6 padding"><img src="111.png"></div>
             </div>
-            <div class="col-3 margin flex-column">
-                <div class="margin">ЗАГОЛОВОК 2 </div>
-                <div class="margin"><img src="111.png"> </div>
+            <div class="col-6 padding flex-column">
+                <div class="padding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur culpa deleniti distinctio dolorem libero obcaecati perferendis quos, rerum similique! Cum, eum, odio? Ab ad consequatur culpa cupiditate deleniti, distinctio doloribus esse explicabo fuga ipsam itaque iure maiores maxime molestiae perferendis possimus qui quis quisquam rem sint tempora vero voluptatibus. Magni, omnis, vero. Amet laboriosam magnam placeat repellat ut veritatis voluptatibus. Animi, aut dicta distinctio eveniet expedita ipsum maiores, non nostrum optio provident quas reprehenderit temporibus. Exercitationem labore laboriosam porro qui repudiandae. Aliquam cupiditate iure quia quibusdam repellat. Ad corporis dicta eaque et natus nemo pariatur qui ratione tempora vitae?
+                </div>
+                <div class="padding">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam asperiores assumenda consectetur consequuntur deleniti dolore doloremque dolores eaque est facere illum iusto laboriosam maiores minima molestiae mollitia nam odio provident quae quo quod reprehenderit, rerum sapiente sint veniam vitae! Ab aliquid dolore error in minima nostrum quam quia vitae!
+                </div>
             </div>
-            <div class="col-3 margin flex-column">
-                <div class="margin">ЗАГОЛОВОК 3 </div>
-                <div class="margin"><img src="111.png"> </div>
-            </div>
-            <div class="col-3 margin flex-column">
-                <div class="margin">ЗАГОЛОВОК 4 </div>
-                <div class="margin"><img src="111.png"> </div>
-            </div>
-        </div>
-
-        <div class="flex-row">
-aaaa
         </div>
 
 
@@ -89,8 +134,8 @@ aaaa
         </div>-->
 
     </main>
-
 </div>
+
 
 <footer>FOOTER</footer>
 
