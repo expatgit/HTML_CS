@@ -1,0 +1,66 @@
+/* menu */
+aside {
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+aside nav {
+    display: flex;
+
+
+}
+
+aside nav a{
+    padding: 20px 10px;
+    color: #3E2723;
+    flex-grow: 1; /*применяется к любому колвы элем, (некратному 12)*/
+    text-align: center;
+}
+
+aside nav :nth-child(1) {
+    background-color: rgba(255, 97, 56, 1);
+}
+
+aside nav :nth-child(2) {
+    background-color: rgba(255, 255, 157, 1);
+}
+
+aside nav :nth-child(3) {
+    background-color: rgba(190, 235, 159, 1);
+}
+
+aside nav :nth-child(4) {
+    background-color: rgba(121, 189, 143, 1);
+}
+
+/* end menu */
+
+ /*shop */
+
+.shop > div:nth-child(3n+2) {
+    height: 200px
+}
+
+.shop > div:nth-child(4n+2) {
+    height: 290px
+}
+
+.shop img {
+    width: 100%;
+    height: 100%;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    flex-wrap: wrap;
+}
+
+.shop .item {
+    /*width: 19%;*/
+    margin: 30px;
+    height: 250px;
+}
+
+/* end shop */

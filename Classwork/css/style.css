@@ -13,12 +13,24 @@ header {
     z-index: 3;
 }
 
-header,
+/*header,*/
 footer {
     height: 100px;
 }
 
-
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+.navbar-title{
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.navbar-title:hover {
+    border-bottom: 4px solid #EFEBE9;
+}
 a {
     /* оформление текста в виде подчеркивания,
     перечеркивания, линии над текстом*/
