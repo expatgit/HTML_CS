@@ -1,0 +1,29 @@
+.shop {
+
+    height: 100%;
+    display: flex;
+
+}
+.card {
+    margin: 10px;
+    padding: 20px;
+    background: #FF4E00;
+    height: 100%;
+}
+
+/*.shop :nth-child(1) {
+    order: 3;
+}
+
+.shop :nth-child(2) {
+    order: -1;
+}
+
+.shop :nth-child(3) {
+    order: 1;
+}*/
+
+section :nth-child(even):hover {
+    background: darkred;
+}
+
