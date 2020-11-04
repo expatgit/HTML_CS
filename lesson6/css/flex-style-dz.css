@@ -1,13 +1,33 @@
 .padding {
     padding: 10px;
     text-align: center;
+    /*
     border: 1px solid black;
+    */
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 header,
 footer {
     height: 100px;
     background: orangered;
+}
+#123 {
+    background-image: url("../111.png");
+}
+.last {
+
+    height: 100%;
+
+}
+
+.last div {
+    height: 100%;
+
 }
 
 header {

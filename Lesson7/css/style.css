@@ -1,0 +1,54 @@
+header {
+    display: flex;
+
+}
+
+header form {
+    margin-left: auto;
+}
+
+body p {
+    text-align: center;
+}
+
+.container {
+    background: #ba9ea1;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.container div {
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.task-5 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.task-5 p {
+    width: 300px;
+}
+
+/*
+.container :nth-child(even) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+*/
+
+/*
+.container :nth-child(1,2,3) {
+    margin-left: 20px;
+    margin-right: 20px;
+}*/
