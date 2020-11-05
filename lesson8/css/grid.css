@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+body {
+    display: grid;
+    /*Шаблон*/
+    grid-template-areas:
+        "header header header"
+        "left main right"
+        "slider slider slider"
+        "footer footer footer";
+    /*1st row*/ /*слова в шаблоне никак не связаны с html, надо потом сделать связь*//*2nd row*//*3rd row*/
+    grid-template-columns: 1fr minmax(500px, 1200px) 1fr; /*определение колонок сетки*/
+    /*minmax(from, to) - назначение размеров области - мин и макс - мин 500, макс 1200 пикс */
+    grid-template-rows: 80px auto 25vh 100px;
+    /*определение рядов сетки, надо прописывать каждый ряд
+       через пробел начиная с первого*/
+    height: 100vh;
+    margin: 0;
+    /*привязка html к template-areas*/
+}
+header {
+    grid-area: header;
+    background: #FF4E00;
+
+}
+
+#left-aside {
+    grid-area: left;
+    background: #BCAAA4;
+}
+
+main {
+    display: grid;
+    grid-template:
+        "image title" /*через пробел задаются размеры ряда*/
+        "specifications reviews"
+        ". reviews"/*пропуск ячейки в 3-ряду и первой колонки, пускто*/
+        ". reviews"
+        "similar similar" 200px
+    / 1fr 2fr; /*задаем размеры колонок*/
+
+
+    /*
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto auto auto 200px;*/
+}
+
+
+main {
+    grid-area: main;
+    background: aquamarine;
+
+}
+
+#right-aside {
+    grid-area: right;
+    background: #BCAAA4;
+}
+#slider {
+    grid-area: slider;
+    background: #0000cc;
+}
+footer {
+    grid-area: footer;
+    background: deepskyblue;
+}
+
+.title {
+    grid-area: title;
+}
+
+.image {
+    grid-area: image;
+}
+
+.specifications {
+    grid-area: specifications;
+}
+
+.reviews {
+    grid-area: reviews;
+}
+
+.similar {
+    grid-area: similar;
+    display: flex;
+}
