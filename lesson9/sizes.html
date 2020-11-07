@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Размеры</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sizes.css">
+</head>
+<body>
+
+<div class="vh-vw add-margin-padding">
+    Размеры vh и vw <!--зависят от размеров окна браузера-->
+    <div class="add-margin-padding add-colors">
+        1vh - эквивалентно 1% высоты окна браузера <br>
+        1vw	- эквивалентно 1% ширины окна браузера
+        <!--для ширины использовать сначала %, если не получается - используем vh, vw
+        100% - лучше 100vw-->
+    </div>
+</div>
+
+<div class="px add-margin-padding">
+    Размер в px
+    <div class="add-margin-padding add-colors">
+        1px – пиксель на экране
+        <!--пиксели рассчитываются на основании физ. размера экрана, независимо от сосдених элементов-->
+    </div>
+</div>
+
+<div class="em-rem add-margin-padding">
+    Размеры в em и rem
+    <div class="add-margin-padding add-colors">
+        <p>
+            1em – текущий размер шрифта. <br> <!--относительный размер шрифта
+            2em - 2 мультиплаер размера текущего шрифта-->
+            Размеры em – относительные, они определяются по текущему контексту (размеру шрифта)
+        </p>
+        <p>
+            1rem – текущий размер шрифта html.<br>
+            Размеры rem – относительные, они определяются по размеру шрифта html
+        </p> <!--если элем. задан размер в rem - цифра перед rem - мультиплаер дефолтного размера
+         шрифта html (16px)
+         2rem - 32px
+         10rem - 160px-->
+    </div>
+</div>
+
+<div class="percent add-margin-padding">
+    Размеры в %
+    <!--% берется от размера родителя-->
+    <!--размер шрифта по умолчанию - 16пкс-->
+    <!---->
+    <div class="add-margin-padding add-colors">
+        <p>
+            Размеры элементов, padding, margin - % от размера родителя
+        </p>
+        <p> <!--font-size: 22px--> <!--- текущий размер шрифта-->
+            Размер шрифта, line-height - % от текущего размера шрифта
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
