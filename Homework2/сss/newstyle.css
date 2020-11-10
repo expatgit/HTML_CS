@@ -112,7 +112,7 @@ nav a {
 }
 
 #elem1 {
-    background: rgba(255, 102, 102, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 1000%;
     position: absolute;
@@ -137,7 +137,7 @@ nav a {
     left: 0;
     margin: auto;
     background: darkgray;
-    transform: rotate(180deg);
+
 }
 #elem1:target {display: block;}
 .close {
@@ -149,16 +149,25 @@ nav a {
     text-decoration: none;
     background: #f2f2f2;
     font-size: 14pt;
-    cursor:pointer;
+    cursor: pointer;
     width: 10px;
     height: auto;
     position: absolute;
     top: -10px;
     right: -10px;
-    border-radius: 70%;
-
+    border-radius: 100%;
 }
-.close a {
 
+.close:hover {
+    background: orangered;
 }
-.close:hover {background: #e6e6ff;}
+
+
+#submit:hover {
+    background: greenyellow;
+}
+
+#reset:hover {
+    background: red;
+}
+
