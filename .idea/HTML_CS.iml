@@ -5,5 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="htm-css" />
+    <orderEntry type="module" module-name="javascript" />
+    <orderEntry type="module" module-name="JS" />
   </component>
 </module>
