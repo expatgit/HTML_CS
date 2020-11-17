@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,18 +9,18 @@
 
 <header>
     <section class="col-9 elem1">
-    <div class="col-3">
-        ОЛИМП
-    </div>
-    <div class="col-3">
-        aaaa
-    </div>
-    <div class="col-3">
-        bbbb
-    </div>
-    <div class="col-3">
-        ccc
-    </div>
+        <div class="col-3">
+            ОЛИМП
+        </div>
+        <div class="col-3">
+            aaaa
+        </div>
+        <div class="col-3">
+            bbbb
+        </div>
+        <div class="col-3">
+            ccc
+        </div>
     </section>
     <section class="col-3 elem2">
         <div>
@@ -32,75 +32,109 @@
 
 <main>
 
-<aside class="col-12">
-    <section class="col-9" id="aside_left">
-        <form name="regform" action="#" method="post" enctype="multipart/form-data">
+    <aside class="col-12">
+        <section class="col-9" id="aside_left"> <!--ЛЕВАЯ ЧАСТЬ С ФОТОГРАФИЕЙ-->
+            <div class="col-9" id="left_form">
+                <form name="regform" action="#" method="post" enctype="multipart/form-data">
+                    <div>
+                        <label for="name">Фамилия: <br></label>
+                        <input type="text" name="name" id="name" placeholder="Фамилие" required>
+                    </div>
+                    <div>
+                        <label for="firstname">Имя: <br></label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Имя" required>
+                    </div>
+                    <div>
+                        <label for="patro">Отчество: <br></label>
+                        <input type="text" name="patro" id="patro" placeholder=" ">
+                    </div>
+                    <div id="birthday">
+                        <label for="day">Дата рождения: <br></label>
+                        <input type="number" name="day" id="day" required min="1" max="31">
+                        <input list="1" name="birthmonth" id="birthmonth">
+                        <datalist name="1" id="1">
+                            <option> января</option>
+                            <option> февраля</option>
+                            <option> марта</option>
+                            <option> апреля</option>
+                            <option> мая</option>
+                            <option> июня</option>
+                            <option> июля</option>
+                            <option> августа</option>
+                            <option> сентября</option>
+                            <option> октября</option>
+                            <option> ноября</option>
+                            <option> декабря</option>
+                        </datalist>
+                        <input type="number" name="birthyear" id="birthyear" min="1925">
+                    </div>
+
+
+                    <div id="contact">
+                        <label for="name">Контакты: <br></label>
+                        <input type="tel" name="tel" id="tel" placeholder="Phone" required>
+                        <input type="email" name="email" id="email" placeholder="email" required>
+                    </div>
+                    <div>
+                        <label for="name">Социальные сети: <br></label>
+                        <input type="text" name="social" id="social" placeholder="Социальные сети" required>
+                        <input type="button" name="add" value="十" id="add">
+                    </div>
+                    <div id="save" class="col-6">
+                       <div class="col-3" id="saveyes"><a href="#">Сохранить</a> </div>
+                        <div class="col-3" id="savereset"><a href="#">Отмена</a> </div>
+                    </div>
+
+                </form>
+            </div>
+
+
+            </div>
+            <div class="col-2" id="photo">
+                <section>
+                <div>
+                    <img src="img/artemiy2.png">
+
+                </div>
+                <p>
+                    Изменить
+                </p>
+                <p>
+                    Удалить
+                </p>
+                </section>
+            </div>
+
+        </section>
+        <section class="col-3" id="aside_right">
             <div>
-                <label for="name">Фамилия: <br></label>
-                <input type="text" name="name" id="name" placeholder="Фамилие">
+                <a href="#">Личная информация</a>
             </div>
             <div>
-                <label for="firstname">Имя: <br></label>
-                <input type="text" name="firstname" id="firstname" placeholder="Имя">
+                <a href="#">Основное образование</a>
             </div>
             <div>
-                <label for="patro">Отчество: <br></label>
-                <input type="text" name="patro" id="patro" placeholder=" ">
+                <a href="#">Дополнительное образование</a>
             </div>
-            <!--дата рождения - отдельный див флекс с тремя контами-->
-            <div class="col-6">
-                <label for="birthdate">Дата рождения: <br></label>
-            <div class="col-12" id="birth">
-
-
-                <div class="col-4">
-
-                    <input type="number" name="birthday" id="birthdate">
-                </div>
-                <div class="col-4">
-                    <input type="text" name="birthmonth" id="birthdate">
-                </div>
-                <div class="col-4">
-                    <input type="number" name="birthyear" id="birthdate">
-                </div>
+            <div>
+                <a href="#">Ключевые навыки</a>
             </div>
-                <div class="col-6">
-
-                </div>
+            <div>
+                <a href="#">Профессиональные навыки</a>
             </div>
-
-        </form>
-    </section>
-    <section class="col-3" id="aside_right">
-        <div>
-            <a href="#">Личная информация</a>
-        </div>
-        <div>
-            <a href="#">Основное образования</a>
-        </div>
-        <div>
-            <a href="#">Дополнительное образование</a>
-        </div>
-        <div>
-            <a href="#">Ключевые навыки</a>
-        </div>
-        <div>
-            <a href="#">Профессиональные навыки</a>
-        </div>
-        <div>
-            <a href="#">Обо мне</a>
-        </div>
-    </section>
-    <!--<section class="col-2">
-        CCC
-    </section>
-    <section class="col-1">
-        DDD
-    </section>-->
-</aside>
+            <div>
+                <a href="#">Обо мне</a>
+            </div>
+        </section>
+        <!--<section class="col-2">
+            CCC
+        </section>
+        <section class="col-1">
+            DDD
+        </section>-->
+    </aside>
 
 </main>
-
 
 
 </body>

@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template:
+        "header header header "
+        "main main main"
+
+        /minmax(15%, 20%) 1fr 1fr;
+    background-color: #F3F3F5;
+
+}
+
+header {grid-area: header;}
+
+main {grid-area: main;}
+
+/*
+
+main {
+    display: grid;
+    !*Шаблон*!
+    grid-template-areas:
+        "left right"
+        "bottom"
+        ;
+    !*1st row*! !*слова в шаблоне никак не связаны с html, надо потом сделать связь*!!*2nd row*!!*3rd row*!
+    grid-template-columns: 1fr minmax(500px, 900px) 1fr; !*определение колонок сетки*!
+    !*minmax(from, to) - назначение размеров области - мин и макс - мин 500, макс 1200 пикс *!
+    grid-template-rows: auto;
+    !*определение рядов сетки, надо прописывать каждый ряд
+       через пробел начиная с первого*!
+    height: 100vh;
+    margin: 0;
+    !*привязка html к template-areas*!
+
+    border: 1px solid brown;
+    padding: 20px;
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 10%;
+
+}
+
+main section :nth-child(1) {
+    color: red;
+    grid-area: left;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color: black;
+}
+
+main section :nth-child(2) {
+    color: green;
+    grid-area: bottom;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background-color: #9948D1;
+}
+
+main section :nth-child(3) {
+    color: red;
+    grid-area: right;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+*/
+
+header {
+    background-color: #7800C1;
+}
+
+main {
+
+    padding: 20px;
+    margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 10%;
+    background-color: #F3F3F5;
+}
+
+section {
+    display: grid;
+    /*
+    grid-auto-columns: col-1 col-2 col-3 ... col-n
+    */
+    grid-template-columns: repeat(4, 1fr); /*4 колонки, кол-во рядов авто, каждая колонка по 1/4 */
+    /*     repeat(4, 1fr);     *//*4 раза повторится по 1 части*/
+    /*1fr 1fr 1fr 1fr;*/
+    gap: 2%; /*расстояние внутри сетки между элементаим. не margin*/
+    row-gap: 2%;
+    /*margin задается родительскому элементу*/
+   /* justify-content: space-around;*/
+   /* margin-right: 10%;
+    margin-left: 10%;*/
+   /* background-color: #C5BECC;*/
+
+
+}
+
+article:nth-child(1) {
+    /*
+    grid-row-end: ;
+    grid-row-start: ;
+    */
+    grid-column: 1 / 4; /*1/2 начинается на первой линии вертикальной, заканчивается на третьей линии вертикальной*/
+    grid-row: 1 / 2;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 10%;
+    background-color: #FAFAFB;
+    margin-left: 0;
+}
+
+article:nth-child(2) {
+    /*
+    grid-row-end: ;
+    grid-row-start: ;
+    */
+    grid-column: 4 / 5; /*1/2 начинается на первой линии вертикальной, заканчивается на третьей линии вертикальной*/
+    grid-row: 1 / 2;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 0;
+    margin-bottom: -35%;
+    background-color: #FAFAFB;
+}
+
+article:nth-child(3) {
+    /*
+    grid-row-end: ;
+    grid-row-start: ;
+    */
+    grid-column: 1 / 4; /*1/2 начинается на первой линии вертикальной, заканчивается на третьей линии вертикальной*/
+    grid-row: 2 / 3;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 0;
+    background-color: #FAFAFB;
+    margin-top: 2%;
+}
